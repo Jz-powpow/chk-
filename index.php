@@ -89,7 +89,7 @@ $keyboard = json_encode([
     'inline_keyboard' => [
         [
             ['text' => "[ᴏᴡɴᴇʀ]", 'url' => "t.me/hexnynejz"],
-            ['text' => "ꜰʀᴇᴇ ᴘʀᴇᴍɪᴜᴍ", 'url' => "https://t.me/SKYY970"],
+            ['text' => "[ꜱᴇʟʟᴇʀ]", 'url' => "https://t.me/SKYY970"],
         ],
     ]
 ]);
