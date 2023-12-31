@@ -62,7 +62,7 @@ $text = $update["message"]["text"];
 if (preg_match('/^(\/pf|\.pf|!pf)/', $text)) {
     $userid = $update['message']['from']['id'];
   if (!checkAccess($userid)) {
-      $sent_message_id = send_reply($chatId, $message_id, $keyboard, "<b> @$username You're not Premium user❌</b>", $message_id);
+      $sent_message_id = send_reply($chatId, $message_id, $keyboard, "<b> @$username 𝘕𝘖 𝘌𝘙𝘌𝘚 𝘗𝘙𝘌𝘔𝘐𝘜𝘔❌</b>", $message_id);
       exit();
   }
 $start_time = microtime(true);
@@ -75,7 +75,7 @@ $start_time = microtime(true);
 
 //====ANTISPAM AND WRONG FORMAT====//
     if (strlen($message) <= 4) {
-            sendMessage($chatId, '<b>• Wrong Format! ⚠️</b>%0A• 𝘚𝘦𝘯𝘥 <code>/chk cc|mm|yy|cvv</code>%0A• 𝘎𝘢𝘵𝘦𝘸𝘢𝘺 <code>Stripe Charge 1 USD</code>', $message_id);
+            sendMessage($chatId, '<b>• 𝘍𝘰𝘳𝘮𝘢𝘵𝘰 𝘪𝘯𝘤𝘰𝘳𝘳𝘦𝘤𝘵𝘰! ⚠️</b>%0A• 𝘜𝘚𝘖 <code>/chk cc|mm|yy|cvv</code>%0A• 𝘎𝘢𝘵𝘦𝘸𝘢𝘺 <code>PayFlow AVS</code>', $message_id);
             exit();
   }
 $r = "0";
@@ -111,12 +111,12 @@ $last4 = substr($cc, -4);
 $sent_message_id = send_reply($chatId, $message_id, $keyboard, "<b>
 
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗖𝗖 ★ <code>$lista</code>
-[↯] 𝗦𝗧𝗔𝗧𝗨𝗦 ★ □□□□□ 0%🔴
-[↯] 𝗚𝗔𝗧𝗘𝗪𝗔𝗬 ★ STRIPE CCN
+[†] ᴄᴀʀᴅ ★ <code>$lista</code>
+[†] sᴛᴀᴛᴜs ★ □□□□□ 0%🔴
+[†] ʀᴇsᴘᴏɴsᴇ ★ STRIPE CCN
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username <code>[$rank]</code>
-[↯] 𝗕𝗢𝗧 𝗕𝗬 ↯ @InfinityHackersKE 
+➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz 
 ━━━━━━━━━━━━━━━━━━</b>");
 
 function value($str,$find_start,$find_end)
@@ -193,12 +193,12 @@ sleep(1);
     edit_sent_message($chatId, $sent_message_id, "<b>
 
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗖𝗖 ★ <code>$lista</code>
-[↯] 𝗦𝗧𝗔𝗧𝗨𝗦 ★ ■□□□□ 20%⚫
-[↯] 𝗚𝗔𝗧𝗘𝗪𝗔𝗬 ★ 2001 Insufficient Funds?
+[†] ᴄᴀʀᴅ ★ <code>$lista</code>
+[†] sᴛᴀᴛᴜs ★ ■□□□□ 20%⚫
+[†] ʀᴇsᴘᴏɴsᴇ ★ 2001 Insufficient Funds?
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username/<code>[$rank]</code>
-[↯] 𝗕𝗢𝗧 𝗕𝗬 ↯@EscaliBud 
+➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username/<code>[$rank]</code>
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 ━━━━━━━━━━━━━━━━━━</b>");
 
   //==================[Randomizing Details]======================//
@@ -283,24 +283,24 @@ sleep(1);
     edit_sent_message($chatId, $sent_message_id, "<b>
 ═════『 』ꪜ🇲🇲═════
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗖𝗖 ★ <code>$lista</code>
-[↯] 𝗦𝗧𝗔𝗧𝗨𝗦 ★ ■■□□□ 40%🟣
-[↯] 𝗚𝗔𝗧𝗘𝗪𝗔𝗬 ★ 81724: Duplicate card exists?
+[†] ᴄᴀʀᴅ ★ <code>$lista</code>
+[†] sᴛᴀᴛᴜs ★ ■■□□□ 40%🟣
+[†] ʀᴇsᴘᴏɴsᴇ ★ 81724: Duplicate card exists?
 ━━━━━━━━━━━━━━━━━━
 [↯] 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username/<code>[$rank]</code>
-[↯] 𝗕𝗢𝗧 𝗕𝗬 ↯ @EscaliBud
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 ━━━━━━━━━━━━━━━━━━</b>");
 
 sleep(1);
     edit_sent_message($chatId, $sent_message_id, "
 
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗖𝗖 ★ <code>$lista</code>
-[↯] 𝗦𝗧𝗔𝗧𝗨𝗦 ★ ■■■□□ 60%🔵
-[↯] 𝗚𝗔𝗧𝗘𝗪𝗔𝗬 ★ cvv: Gateway Rejected: cvv?
+[†] ᴄᴀʀᴅ ★ <code>$lista</code>
+[†] sᴛᴀᴛᴜs ★ ■■■□□ 60%🔵
+[†] ʀᴇsᴘᴏɴsᴇ ★ cvv: Gateway Rejected: cvv?
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username/<code>[$rank]</code>
-[↯] 𝗕𝗢𝗧 𝗕𝗬 ↯ @EscaliBud 
+➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username/<code>[$rank]</code>
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 ━━━━━━━━━━━━━━━━━━</b>");
   //==================[BIN LOOK-UP]======================//
 
@@ -353,12 +353,12 @@ $type =strtoupper(GetStr($fim, '"type":"', '"'));
 sleep(1);
     edit_sent_message($chatId, $sent_message_id, "<b>
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗖𝗖 ★ <code>$lista</code>
-[↯] 𝗦𝗧𝗔𝗧𝗨𝗦 ★ ■■■■□ 80%🟠
-[↯] 𝗚𝗔𝗧𝗘𝗪𝗔𝗬 ★ 2044: Declined - Call Issuer?
+[†] ᴄᴀʀᴅ ★ <code>$lista</code>
+[†] sᴛᴀᴛᴜs ★ ■■■■□ 80%🟠
+[†] ʀᴇsᴘᴏɴsᴇ ★ 2044: Declined - Call Issuer?
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username/<code>[$rank]</code>
-[↯] 𝗕𝗢𝗧 𝗕𝗬 ↯ @EscaliBud
+➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username/<code>[$rank]</code>
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 ━━━━━━━━━━━━━━━━━━</b>");
 //-------------------Req 2--------------//
 $ch = curl_init();
@@ -439,12 +439,12 @@ $msg = trim(strip_tags(getStr($result2,'<div id="pmpro_message_bottom" class="pm
 
 sleep(1);
     edit_sent_message($chatId, $sent_message_id, "<b>
-[↯] 𝗖𝗖 ★ <code>$lista</code>
-[↯] 𝗦𝗧𝗔𝗧𝗨𝗦 ★ ■■■■■ 99%🟢
-[↯] 𝗚𝗔𝗧𝗘𝗪𝗔𝗬 ★ STRIPE CCN
+[†] ᴄᴀʀᴅ ★ <code>$lista</code>
+[†] sᴛᴀᴛᴜs ★ ■■■■■ 99%🟢
+[†] ʀᴇsᴘᴏɴsᴇ ★ STRIPE CCN
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username <code>[$rank]</code>
-[↯] 𝗕𝗢𝗧 𝗕𝗬 ↯ @EscaliBud 
+➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz 
 ━━━━━━━━━━━━━━━━━━</b>");
 $end_time = microtime(true);
 $time = number_format($end_time - $start_time, 2);
@@ -464,21 +464,21 @@ if (
 ) {
 
   $resp = "<b>
-𝗣𝗮𝘆𝗙𝗹𝗼𝘄 𝗔𝗩𝗦 🌩
+𝗣𝗮𝘆𝗙𝗹𝗼𝘄 𝗔𝗩𝗦 
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗖𝗖 ★ <code>$lista</code>
-[↯] 𝗦𝗧𝗔𝗧𝗨𝗦 ★ Live 🟢
-[↯] 𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗲 ★ <code> Thanks for your donation </code>
+[†] ᴄᴀʀᴅ ★ <code>$lista</code>
+[†] sᴛᴀᴛᴜs ★ Live ✅
+[†] ʀᴇsᴘᴏɴsᴇ ★ <code> Thanks for your donation </code>
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗕𝗜𝗡 𝗜𝗻𝗳𝗼 ↯<code>$bank</code>
-[↯] 𝗕𝗮𝗻𝗸 ↯ <code>$brand</code>
-[↯] 𝗧𝗬𝗣𝗘 ↯ <code>$type</code>
-[↯] 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 ↯ <code>$name $emoji</code>
+[†] 𝘽𝙄𝙉: <code>$bank</code>
+[†] 𝘽𝘼𝙉𝙆: <code>$brand</code>
+[†] 𝙏𝙔𝙋𝙀: <code>$type</code>
+[†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗣𝗥𝗢𝗫𝗬 ↯ <code>$r.XXX.XXX.XX Live ✅</code>
-[↯] 𝗧𝗜𝗠𝗘 ↯ <code>$time seconds</code> 
-[↯] 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username <code>[$rank]</code>
-
+[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live </code>
+[†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
+➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 </b>";
 
 sleep(1);
@@ -489,21 +489,21 @@ elseif(strpos($result2, "Your card has insufficient funds.") || strpos($result2,
 
 
 $resp = "<b>
-𝗣𝗮𝘆𝗙𝗹𝗼𝘄 𝗔𝗩𝗦 🌩
+𝗣𝗮𝘆𝗙𝗹𝗼𝘄 𝗔𝗩𝗦 
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗖𝗖 ★ <code>$lista</code>
-[↯] 𝗦𝗧𝗔𝗧𝗨𝗦 ★ Live 🟢
-[↯] 𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗲 ★ <code>Insufficient funds </code>
+[†] ᴄᴀʀᴅ ★ <code>$lista</code>
+[†] sᴛᴀᴛᴜs ★ Live ✅
+[†] ʀᴇsᴘᴏɴsᴇ ★ <code>Insufficient funds </code>
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗕𝗜𝗡 𝗜𝗻𝗳𝗼 ↯<code>$bank</code>
-[↯] 𝗕𝗮𝗻𝗸 ↯ <code>$brand</code>
-[↯] 𝗧𝗬𝗣𝗘 ↯ <code>$type</code>
-[↯] 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 ↯ <code>$name  $emoji</code>
+[†] 𝘽𝙄𝙉: <code>$bank</code>
+[†] 𝘽𝘼𝙉𝙆: <code>$brand</code>
+[†] 𝙏𝙔𝙋𝙀: <code>$type</code>
+[†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name  $emoji</code>
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗣𝗥𝗢𝗫𝗬 ↯ <code>$r.XXX.XXX.XX Live ✅</code>
-[↯] 𝗧𝗜𝗠𝗘 ↯ <code>$time seconds</code>
-[↯] 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username <code>[$rank]</code>
-
+[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live </code>
+[†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code>
+➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 </b>";
 
 sleep(1);
@@ -513,21 +513,21 @@ edit_sent_message($chatId, $sent_message_id, $resp);
 
 elseif(strpos($result2, 'security code is incorrect.') !== false || strpos($result2, 'security code is invalid.') !== false || strpos($result2, "incorrect_cvc") !== false) {
 $resp = "<b>
-𝗣𝗮𝘆𝗙𝗹𝗼𝘄 𝗔𝗩𝗦 🌩
+𝗣𝗮𝘆𝗙𝗹𝗼𝘄 𝗔𝗩𝗦 
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗖𝗖 ★ <code>$lista</code>
-[↯] 𝗦𝗧𝗔𝗧𝗨𝗦 ★ Live 🟢
-[↯] 𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗲 ★ <code>Incorrect CVC</code>
+[†] ᴄᴀʀᴅ ★ <code>$lista</code>
+[†] sᴛᴀᴛᴜs ★ Live ✅
+[†] ʀᴇsᴘᴏɴsᴇ ★ <code>Incorrect CVC</code>
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗕𝗜𝗡 𝗜𝗻𝗳𝗼 ↯<code>$bank</code>
-[↯] 𝗕𝗮𝗻𝗸 ↯ <code>$brand</code>
-[↯] 𝗧𝗬𝗣𝗘 ↯ <code>$type</code>
-[↯] 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 ↯ <code>$name $emoji</code>
+[†] 𝘽𝙄𝙉: <code>$bank</code>
+[†] 𝘽𝘼𝙉𝙆: <code>$brand</code>
+[†] 𝙏𝙔𝙋𝙀: <code>$type</code>
+[†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗣𝗥𝗢𝗫𝗬 ↯ <code>$r.XXX.XXX.XX Live ✅</code>
-[↯] 𝗧𝗜𝗠𝗘 ↯ <code>$time seconds</code> 
-[↯] 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username <code>[$rank]</code>
-
+[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live </code>
+[†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
+➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 </b>";
 
 sleep(1);
@@ -536,21 +536,21 @@ edit_sent_message($chatId, $sent_message_id, $resp);
 
 elseif(strpos($result2, "Your card does not support this type of purchase.")) {
 $resp = "<b>
-𝗣𝗮𝘆𝗙𝗹𝗼𝘄 𝗔𝗩𝗦 🌩
+𝗣𝗮𝘆𝗙𝗹𝗼𝘄 𝗔𝗩𝗦 
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗖𝗖 ★ <code>$lista</code>
-[↯] 𝗦𝗧𝗔𝗧𝗨𝗦 ★ Live 🟢
-[↯] 𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗲 ★ <code>Your card doesn't support this type of purchase</code>
+[†] ᴄᴀʀᴅ ★ <code>$lista</code>
+[†] sᴛᴀᴛᴜs ★ Live ✅
+[†] ʀᴇsᴘᴏɴsᴇ ★ <code>Your card doesn't support this type of purchase</code>
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗕𝗜𝗡 𝗜𝗻𝗳𝗼 ↯ <code>$bank</code>
-[↯] 𝗕𝗮𝗻𝗸 ↯ <code>$brand</code>
-[↯] 𝗧𝗬𝗣𝗘 ↯ <code>$type</code>
-[↯] 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 ↯ <code>$name $emoji</code>
+[†] 𝘽𝙄𝙉: <code>$bank</code>
+[†] 𝘽𝘼𝙉𝙆: <code>$brand</code>
+[†] 𝙏𝙔𝙋𝙀: <code>$type</code>
+[†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗣𝗥𝗢𝗫𝗬 ↯ <code>$r.XXX.XXX.XX Live ✅</code>
-[↯] 𝗧𝗜𝗠𝗘 ↯ <code>$time seconds</code> 
-[↯] 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username <code>[$rank]</code>
-
+[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live </code>
+[†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
+➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 
 </b>";
 
@@ -560,21 +560,21 @@ edit_sent_message($chatId, $sent_message_id, $resp);
 
 elseif(strpos($result2, "stripe_3ds2_fingerprint")) {
 $resp = "<b>
-𝗣𝗮𝘆𝗙𝗹𝗼𝘄 𝗔𝗩𝗦 🌩
+𝗣𝗮𝘆𝗙𝗹𝗼𝘄 𝗔𝗩𝗦 
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗖𝗖 ★ <code>$lista</code>
-[↯] 𝗦𝗧𝗔𝗧𝗨𝗦 ★ Live 🟢
-[↯] 𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗲 ★ <code>CCN Live 1$ </code>
+[†] ᴄᴀʀᴅ ★ <code>$lista</code>
+[†] sᴛᴀᴛᴜs ★ Live ✅
+[†] ʀᴇsᴘᴏɴsᴇ ★ <code>CCN Live 1$ </code>
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗕𝗜𝗡 𝗜𝗻𝗳𝗼 ↯<code>$bank</code>
-[↯] 𝗕𝗮𝗻𝗸 ↯ <code>$brand</code>
-[↯] 𝗧𝗬𝗣𝗘 ↯ <code>$type</code>
-[↯] 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 ↯ <code>$name $emoji</code>
+[†] 𝘽𝙄𝙉: <code>$bank</code>
+[†] 𝘽𝘼𝙉𝙆: <code>$brand</code>
+[†] 𝙏𝙔𝙋𝙀: <code>$type</code>
+[†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗣𝗥𝗢𝗫𝗬 ↯ <code>$r.XXX.XXX.XX Live ✅</code>
-[↯] 𝗧𝗜𝗠𝗘 ↯ <code>$time seconds</code> 
-[↯] 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username <code>[$rank]</code>
-
+[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live </code>
+[†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
+➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 
 </b>";
 
@@ -585,21 +585,21 @@ edit_sent_message($chatId, $sent_message_id, $resp);
 
 else {
 $resp = "<b>
-𝗣𝗮𝘆𝗙𝗹𝗼𝘄 𝗔𝗩𝗦 🌩
+𝗣𝗮𝘆𝗙𝗹𝗼𝘄 𝗔𝗩𝗦 
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗖𝗖 ★ <code>$lista</code>
-[↯] 𝗦𝗧𝗔𝗧𝗨𝗦 ★ Dead 🔴
-[↯] 𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗲 ★ <code>$msg </code>
+[†] ᴄᴀʀᴅ ★ <code>$lista</code>
+[†] sᴛᴀᴛᴜs ★ Dead ❌
+[†] ʀᴇsᴘᴏɴsᴇ ★ <code>$msg </code>
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗕𝗜𝗡 𝗜𝗻𝗳𝗼 ↯<code>$bank</code>
-[↯] 𝗕𝗮𝗻𝗸 ↯ <code>$brand</code>
-[↯] 𝗧𝗬𝗣𝗘 ↯ <code>$type</code>
-[↯] 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 ↯ <code>$name $emoji</code>
+[†] 𝘽𝙄𝙉: <code>$bank</code>
+[†] 𝘽𝘼𝙉𝙆: <code>$brand</code>
+[†] 𝙏𝙔𝙋𝙀: <code>$type</code>
+[†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗣𝗥𝗢𝗫𝗬 ↯ <code>$r.XXX.XXX.XX Live ✅</code>
-[↯] 𝗧𝗜𝗠𝗘 ↯ <code>$time seconds</code> 
-[↯] 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username <code>[$rank]</code>
-
+[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
+[†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
+➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 
 </b>";
 
