@@ -1,10 +1,10 @@
 <?php
 
-if (preg_match('/^(\/fake|\.fake|!fake)/', $text)) {
+if (preg_match('/^(\/fake|\.addr|!fake)/', $text)) {
     $add = substr($message, 6);
     
     if(empty($add)) {
-        $m = "<b>Input valid country code Ex:</b> <code>/rand us</code>";
+        $m = "<b>valid country code Ex:</b> <code>/addr us</code>";
         sendMessage($chatId,$m,$message_id);
         exit();
     }
@@ -115,22 +115,22 @@ if (preg_match('/^(\/fake|\.fake|!fake)/', $text)) {
     if(empty($ssn)){
     $ssn="null";
     }
-    $respo = urlencode("<b>Fake Address Generator 📝
+    $respo = urlencode("<b>Fake Address Gen 
  ╔═════════════════╗
-🗺️ Country» <code>$con</code>
+x Country» <code>$con</code>
 
-🛣️ Street » <code>$street</code>
+x Street » <code>$street</code>
 
-🌇 City » <code>$city</code>
+x City » <code>$city</code>
 
-🏠 State » <code>$state1</code>
+x State » <code>$state1</code>
 
-📮 Zip Code » <code>$zip</code>
+x Zip Code » <code>$zip</code>
 
-☎️ Telephone » <code>$phone</code>
+x Num » <code>$phone</code>
 ╚═════════════════╝
 •├Req » @$username <code>[$rank]</code>
-•├Dev » <code>@EscaliBud</code>    
+•├Dev » <code>@hexnynejz</code>    
 </b>");
     sendMessage($chatId,$respo,$message_id);}
 ?>
