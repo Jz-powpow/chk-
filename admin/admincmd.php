@@ -4,21 +4,21 @@ if ((strpos($message, "/adm") === 0)||(strpos($message, "!adm") === 0)||(strpos(
   $owners = file_get_contents('Database/owner.txt');
   $admins = explode("\n", $owners);
   if (!in_array($userId, $admins)) {
-      sendMessage($chatId,"Opps! You're not an Admin 🤣",$messageId);
+      sendMessage($chatId,"𝙉𝙤 𝙚𝙧𝙚𝙨 𝘼𝙙𝙢𝙞𝙣 ❌",$messageId);
   } else
   {
   sendMessage($chatId,urlencode(
     "<b>
-Admin commands here
+𝘼𝙙𝙢𝙞𝙣 𝙘𝙢𝙙𝙨:
 
-Code generate: /code day-amount
-Usage: <code>/code 1-1</code>
+† 𝙂𝙚𝙣𝙚𝙧𝙖𝙧 𝙠𝙚𝙮: /code day-amount
+𝙐𝙨𝙤: <code>/code 1-1</code>
 
-Delete expired: /remexp
-Usage: <code>/remexp</code>
+† 𝙀𝙡𝙞𝙢𝙞𝙣𝙖𝙧 𝙚𝙭𝙥𝙞𝙧𝙖𝙙𝙤𝙨: /remexp
+𝙐𝙨𝙤: <code>/remexp</code>
 
-Soon adding more...
-
+† 𝙀𝙧𝙞 𝙜𝙚𝙞 :𝙫 /gay
+𝙐𝙨𝙤: <code>/gay</code>
 </b>"),$messageId);
   }
 }
