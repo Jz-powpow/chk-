@@ -1,6 +1,6 @@
 <?php
 
-$botToken = "6628835787:AAG3AEn1ukqUaENr09N5vk7S5odcO0BO5JM";
+$botToken = "6778123440:AAFy-V-cHZg0xADqspnb4vA_JXD8cjNFJik";
 $website = "https://api.telegram.org/bot".$botToken;
 $update = file_get_contents('php://input');
 //echo $update;
@@ -28,7 +28,7 @@ $username3       = ('@'.$username);
  $info            = json_encode($update, JSON_PRETTY_PRINT); 
 $emojid = '❌';
 $emojil = '✅';
-$owner = '<code>@EscaliBud</code>';
+$owner = '<code>@hexnyejz</code>';
 $cofuid = '1212';
 $cofuid2 = '1212';
 $cofuid3 = '1212';
@@ -79,7 +79,7 @@ $callbackmessage = $update->callback_query->message->text;
 $callbackid = $update->callback_query->id;
 
 $text = $update->message->text;
-$owner = '<code>@EscaliBud</code>';
+$owner = '<code>@hexnynejz</code>';
 
 
 
@@ -88,8 +88,8 @@ $owner = '<code>@EscaliBud</code>';
 $keyboard = json_encode([
     'inline_keyboard' => [
         [
-            ['text' => "𝐎𝐖𝐍𝐄𝐑", 'url' => "https://t.me/EscaliBud"],
-            ['text' => "𝐅𝐑𝐄𝐄 𝐏𝐑𝐄𝐌𝐈𝐔𝐌", 'url' => "https://t.me/InfinityHackersKE"],
+            ['text' => "[ᴏᴡɴᴇʀ]", 'url' => "t.me/hexnynejz"],
+            ['text' => "ꜰʀᴇᴇ ᴘʀᴇᴍɪᴜᴍ", 'url' => "https://t.me/SKYY970"],
         ],
     ]
 ]);
@@ -98,20 +98,20 @@ $keyboard = json_encode([
 
 if ($cdata2 == "back") {
     // Go back to the welcome page
-    $gatesText = "<b>━━━━━━━━━━━━━━━━━━━\n" . str_repeat(' ', 20) . "『 𝑮𝑨𝑻𝑬𝑾𝑨𝒀𝑺 』 💫" . str_repeat(' ', 20) . "\n━━━━━━━━━━━━━━━━━━━\n • ┌TOTAL GATES ⇢ 9\n • ├PREMIUM GATES ❥︎ 5\n • └FREE GATES ⇢ 4\n\n ├𝐁𝐎𝐓 𝐁𝐘 ❥︎  @InfinityHackersKE</b>";
+    $gatesText = "<b>━━━━━━━━━━━━━━━━━━━\n" . str_repeat(' ', 20) . "『 𝑮𝑨𝑻𝑬𝑾𝑨𝒀𝑺 』" . str_repeat(' ', 20) . "\n━━━━━━━━━━━━━━━━━━━\n TOTAL GATES ⇢ 9\n ⡷⠂ᴘʀᴇᴍɪᴜᴍ ɢᴀᴛᴇꜱ⠐⢾ ⇢ 5\n ⡷⠂ꜰʀᴇᴇ ɢᴀᴛᴇꜱ⠐⢾ ⇢ 4\n\n ★[ʙᴏᴛ ʙʏ]★ @hexnynejz</b>";
 
     $gatesText = "<b>━━━━━━━━━━━━━━━━━━━\n" 
-               . str_repeat(' ', 20) . "『 𝑮𝑨𝑻𝑬𝑾𝑨𝒀𝑺 』 💫" 
+               . str_repeat(' ', 20) . "『 𝑮𝑨𝑻𝑬𝑾𝑨𝒀𝑺 』 " 
                . str_repeat(' ', 20) 
-               . "\n━━━━━━━━━━━━━━━━━━━\n •├𝗧𝗼𝘁𝗮𝗹  𝗚𝗔𝗧𝗘𝗦 ⇢ 9\n •├𝗣𝗥𝗘𝗠𝗜𝗨𝗠  𝗚𝗔𝗧𝗘𝗦 ⇢ 5 \n •├𝗙𝗥𝗘𝗘 𝗚𝗔𝗧𝗘𝗦 ⇢ 4\n\n━━━━━━━━━━━━━━━━━━━\n •├Dev ➳ <code>@EscaliBud</code></b>";
+               . "\n━━━━━━━━━━━━━━━━━━━\n 𝗚𝗔𝗧𝗘𝗦 ⇢ 9\n ⡷⠂ᴘʀᴇᴍɪᴜᴍ ɢᴀᴛᴇꜱ⠐⢾ ⇢ 5 \n ⡷⠂ꜰʀᴇᴇ ɢᴀᴛᴇꜱ⠐⢾ ⇢ 4\n\n━━━━━━━━━━━━━━━━━━━\n •𝘿𝙚𝙫 𝙗𝙮 ➳ <code>@hexnynejz</code></b>";
 
     $gatesKeyboard = json_encode([
         'inline_keyboard' => [
-            [['text' => '𝗣𝗥𝗘𝗠𝗜𝗨𝗠 ', 'callback_data' => 'premium'], ['text' => '𝗙𝗥𝗘𝗘 ', 'callback_data' => 'free']],
-            [['text' => '𝗕𝗔𝗖𝗞', 'callback_data' => 'back2']]
+            [['text' => '𝙋𝙍𝙀𝙈𝙄𝙐𝙈 ', 'callback_data' => 'premium'], ['text' => '𝙁𝙍𝙀𝙀 ', 'callback_data' => 'free']],
+            [['text' => '𝘼𝙏𝙍𝘼𝙎', 'callback_data' => 'back2']]
         ]
     ]);
-    $videoUrl = "https://t.me/DartNetc/6";
+    $videoUrl = "https://t.me/chkTest09/5";
 
     $inputMediaVideo = json_encode([
         'type' => 'video',
@@ -127,19 +127,19 @@ if ($cdata2 == "back") {
 
 if ($cdata2 == "gates") {
     $gatesText = "<b>━━━━━━━━━━━━━━━━━━━\n" 
-               . str_repeat(' ', 20) . "『 𝑮𝑨𝑻𝑬𝑾𝑨𝒀𝑺 』 💫" 
+               . str_repeat(' ', 20) . "『 𝑮𝑨𝑻𝑬𝑾𝑨𝒀𝑺 』" 
                . str_repeat(' ', 20) 
-               . "\n━━━━━━━━━━━━━━━━━━━\n •├𝗧𝗼𝘁𝗮𝗹 𝗚𝗔𝗧𝗘𝗦 ⇢ 9\n •├𝗣𝗥𝗘𝗠𝗜𝗨𝗠 𝗚𝗔𝗧𝗘𝗦 ⇢ 5\n •├𝗙𝗥𝗘𝗘  𝗚𝗔𝗧𝗘𝗦 ⇢ 4\n\n━━━━━━━━━━━━━━━━━━━\n •├Dev ➳ <code>@InfinityHackersKE</code></b>";
+               . "\n━━━━━━━━━━━━━━━━━━━\n 𝗧𝗼𝘁𝗮𝗹 𝗚𝗔𝗧𝗘𝗦 ⇢ 9\n ⡷⠂ᴘʀᴇᴍɪᴜᴍ ɢᴀᴛᴇꜱ⠐⢾ ⇢ 5\n ⡷⠂ꜰʀᴇᴇ ɢᴀᴛᴇꜱ⠐⢾ ⇢ 4\n\n━━━━━━━━━━━━━━━━━━━\n •𝘿𝙚𝙫 𝙗𝙮 ➳ <code>@hexnynejz</code></b>";
 
   
     $gatesKeyboard = json_encode([
         'inline_keyboard' => [
-            [['text' => '𝗣𝗥𝗘𝗠𝗜𝗨𝗠 ', 'callback_data' => 'premium'], ['text' => '𝗙𝗥𝗘𝗘 ', 'callback_data' => 'free']],
-            [['text' => '𝗕𝗔𝗖𝗞', 'callback_data' => 'back2']]
+            [['text' => '𝙋𝙍𝙀𝙈𝙄𝙐𝙈 ', 'callback_data' => 'premium'], ['text' => '𝙁𝙍𝙀𝙀 ', 'callback_data' => 'free']],
+            [['text' => '𝘼𝙏𝙍𝘼𝙎', 'callback_data' => 'back2']]
         ]
     ]);
 
-    $videoUrl = "https://t.me/DartNetc/6";
+    $videoUrl = "https://t.me/chkTest09/5";
 
     $inputMediaVideo = json_encode([
         'type' => 'video',
@@ -160,25 +160,25 @@ if ($cdata2 == "gates") {
 $premiumButton = json_encode([
     'inline_keyboard' => [
         [
-            ['text' => '𝗣𝗥𝗘𝗠𝗜𝗨𝗠 ⭐️', 'callback_data' => 'premium'],
-            ['text' => '𝗕𝗔𝗖𝗞 ', 'callback_data' => 'back']
+            ['text' => '𝙋𝙍𝙀𝙈𝙄𝙐𝙈 ', 'callback_data' => 'premium'],
+            ['text' => '𝘼𝙏𝙍𝘼𝙎 ', 'callback_data' => 'back']
         ]
     ]
 ]);
 
 if ($cdata2 == "free") {
-    $freeText = "<b>\n𝗙𝗥𝗘𝗘 𝗚𝗔𝗧𝗘𝗦 🍁 ⇢\n\n╔═════════════════╗\n├<u>𝑮𝒂𝒕𝒆𝒘𝒂𝒚 </u> : 𝑺𝒕𝒓𝒊𝒑𝒆 𝑪𝒉𝒂𝒓𝒈𝒆 $1 ✅ 
+    $freeText = "<b>\n𝙁𝙍𝙀𝙀 𝙂𝘼𝙏𝙀𝙎 ⇢\n\n╔═════════════════╗\n├<u>𝑮𝒂𝒕𝒆𝒘𝒂𝒚 </u> : 𝑺𝒕𝒓𝒊𝒑𝒆 𝑪𝒉𝒂𝒓𝒈𝒆 $1 ✅ 
 ├𝑼𝒔𝒆𝒓 : 𝗙𝗥𝗘𝗘 
-├𝑼𝒔𝒂𝒈𝒆 : <code>/au 𝒄𝒄|𝒎𝒎|𝒆𝒙𝒑|𝒄𝒗𝒗 </code>\n\n├<u>𝑮𝒂𝒕𝒆𝒘𝒂𝒚</u> : SHOPIFY ❌
-├𝑼𝒔𝒆𝒓 : 𝗙𝗥𝗘𝗘  soon
-├𝑼𝒔𝒂𝒈𝒆 : <code>/sr 𝒄𝒄|𝒎𝒎|𝒆𝒙𝒑|𝒄𝒗𝒗 </code>\n\n├<u>𝑮𝒂𝒕𝒆𝒘𝒂𝒚</u> : PAYPAL
+├𝙐𝙎𝙊 : <code>/au 𝒄𝒄|𝒎𝒎|𝒆𝒙𝒑|𝒄𝒗𝒗 </code>\n\n├<u>𝑮𝒂𝒕𝒆𝒘𝒂𝒚</u> : SHOPIFY ❌
+├𝑼𝒔𝒆𝒓 : 𝘰𝘧𝘧𝘭𝘪𝘯𝘦
+├𝙐𝙎𝙊 : <code>/sr 𝒄𝒄|𝒎𝒎|𝒆𝒙𝒑|𝒄𝒗𝒗 </code>\n\n├<u>𝑮𝒂𝒕𝒆𝒘𝒂𝒚</u> : PAYPAL
 ├𝑼𝒔𝒆𝒓 : 𝑭𝒓𝒆𝒆 ON ✅
-├𝑼𝒔𝒂𝒈𝒆 : <code>/pp 𝒄𝒄|𝒎𝒎|𝒆𝒙𝒑|𝒄𝒗𝒗 </code>\n\n├<u>𝑮𝒂𝒕𝒆𝒘𝒂𝒚</u> : 
+├𝙐𝙎𝙊 : <code>/pp 𝒄𝒄|𝒎𝒎|𝒆𝒙𝒑|𝒄𝒗𝒗 </code>\n\n├<u>𝑮𝒂𝒕𝒆𝒘𝒂𝒚</u> : 
 ├𝑼𝒔𝒆𝒓 : 𝑭𝒓𝒆𝒆 on ✅
-├𝑼𝒔𝒂𝒈𝒆 : <code>/ccn 𝒄𝒄|𝒎𝒎|𝒆𝒙𝒑|𝒄𝒗𝒗 </code>\n╚═════════════════╝\n</b>";
+├𝙐𝙎𝙊 : <code>/ccn 𝒄𝒄|𝒎𝒎|𝒆𝒙𝒑|𝒄𝒗𝒗 </code>\n╚═════════════════╝\n</b>";
 
     // Replace this with your video URL
-    $videoUrl = "https://t.me/DartNetc/6";
+    $videoUrl = "https://t.me/chkTest09/5";
 
     $inputMediaVideo = json_encode([
         'type' => 'video',
@@ -195,38 +195,38 @@ if ($cdata2 == "free") {
 $freeButton = json_encode([
     'inline_keyboard' => [
         [
-            ['text' => '𝗙𝗥𝗘𝗘 ', 'callback_data' => 'free'],
-            ['text' => '𝗕𝗔𝗖𝗞 ', 'callback_data' => 'back']
+            ['text' => '𝙁𝙍𝙀𝙀 ', 'callback_data' => 'free'],
+            ['text' => '𝘼𝙏𝙍𝘼𝙎 ', 'callback_data' => 'back']
         ]
     ]
 ]);
 
 if ($cdata2 == "premium") {
    $premiumText = "┏                                                  ┓
- 〤𝙋𝙍𝙀𝙈𝙄𝙐𝙈 𝙂𝘼𝙏𝙀𝙒𝘼𝙔〤  
+ 〤𝙋𝙍𝙀𝙈𝙄𝙐𝙈 𝙂𝘼𝙏𝙀𝙎〤  
 ┗                                                  ┛
 - - - - - - - - - - - - - - - - - - - - -
-𝙂𝙚𝙩𝙖𝙬𝙖𝙮 🔥𝗦𝗤𝗨𝗔𝗥𝗘 𝗔𝗨𝗧𝗛 
+𝙂𝙚𝙩𝙖𝙬𝙖𝙮 ★ 𝗦𝗤𝗨𝗔𝗥𝗘 𝗔𝗨𝗧𝗛 
 ┣ꜱᴛᴀᴛᴜꜱ [ ᴏɴʟɪɴᴇ ✅ ]
-┣ᴜꜱᴇʀ [ ᴘʀᴇᴍɪᴜᴍ  🌟 ]
+┣ᴜꜱᴇʀ [ ᴘʀᴇᴍɪᴜᴍ ]
 ┣ꜰᴏʀᴍᴀᴛ: /b3 ᴄᴄ|ᴍᴏɴᴛʜ|ʏᴇᴀʀ|ᴄᴠᴠ
 - - - - - - - - - - - - - - - - - - - - -
-𝙂𝙖𝙩𝙚𝙬𝙖𝙮 🔥 CCN CHARGE
+𝙂𝙖𝙩𝙚𝙬𝙖𝙮 ★ CCN CHARGE
 ┣ꜱᴛᴀᴛᴜꜱ [ ᴏɴʟɪɴᴇ ✅ ]
-┣ᴜꜱᴇʀ [ ᴘʀᴇᴍɪᴜᴍ  🌟 ]
+┣ᴜꜱᴇʀ [ ᴘʀᴇᴍɪᴜᴍ ]
 ┣ꜰᴏʀᴍᴀᴛ: /ccn ᴄᴄ|ᴍᴏɴᴛʜ|ʏᴇᴀʀ|ᴄᴠᴠ
 - - - - - - - - - - - - - - - - - - - - -
- 𝙂𝙖𝙩𝙚𝙬𝙖𝙮 🔥 𝙎𝙩𝙧𝙞𝙥𝙚 [ 𝟭$ ]
+ 𝙂𝙖𝙩𝙚𝙬𝙖𝙮 ★ 𝙎𝙩𝙧𝙞𝙥𝙚 [ 𝟭$ ]
 ┣ꜱᴛᴀᴛᴜꜱ [ ᴏɴʟɪɴᴇ ✅ ]
-┣ᴜꜱᴇʀ [ ᴘʀᴇᴍɪᴜᴍ  🌟 ]
+┣ᴜꜱᴇʀ [ ᴘʀᴇᴍɪᴜᴍ ]
 ┣ꜰᴏʀᴍᴀᴛ: /chk ᴄᴄ|ᴍᴏɴᴛʜ|ʏᴇᴀʀ|ᴄᴠᴠ
 - - - - - - - - - - - - - - - - - - - - -
-𝙂𝙖𝙩𝙚𝙬𝙖𝙮 🔥 BRAINTREE
+𝙂𝙖𝙩𝙚𝙬𝙖𝙮 ★ BRAINTREE
 ┣ꜱᴛᴀᴛᴜꜱ [ ᴏɴʟɪɴᴇ ✅ ]
-┣ᴜꜱᴇʀ [ ᴘʀᴇᴍɪᴜᴍ  🌟 ]
+┣ᴜꜱᴇʀ [ ᴘʀᴇᴍɪᴜᴍ ]
 ┣ꜰᴏʀᴍᴀᴛ: /bra ᴄᴄ|ᴍᴏɴᴛʜ|ʏᴇᴀʀ|ᴄᴠᴠ
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-𝙂𝙖𝙩𝙚𝙬𝙖𝙮 🔥 𝙋𝙖𝙮𝙛𝙡𝙤𝙬 𝘼𝙫𝙨
+𝙂𝙖𝙩𝙚𝙬𝙖𝙮 - 𝙋𝙖𝙮𝙛𝙡𝙤𝙬 𝘼𝙫𝙨
 ┣ꜱᴛᴀᴛᴜꜱ [ ᴏɴʟɪɴᴇ ✅ ]
 ┣ᴜꜱᴇʀ [ ꜰʀᴇᴇ ✨ ]
 ┣ꜰᴏʀᴍᴀᴛ: /pf ᴄᴄ|ᴍᴏɴᴛʜ|ʏᴇᴀʀ|ᴄᴠᴠ
@@ -236,7 +236,7 @@ if ($cdata2 == "premium") {
 ";
 
     // Replace this with your video URL
-    $videoUrl = "https://t.me/DartNetc/6";
+    $videoUrl = "https://t.me/chkTest09/5";
 
     $inputMediaVideo = json_encode([
         'type' => 'video', 
@@ -255,7 +255,7 @@ if ($cdata2 == "premium") {
 //==============TOOLS===============//
 $toolKeyboard = json_encode([
     'inline_keyboard' => [
-        [['text' => "𝗚𝗔𝗧𝗘𝗦", 'callback_data' => 'gates'], ['text' => "𝗕𝗔𝗖𝗞", 'callback_data' => 'back2']]
+        [['text' => "𝙂𝘼𝙏𝙀𝙎", 'callback_data' => 'gates'], ['text' => "𝘼𝙏𝙍𝘼𝙎", 'callback_data' => 'back2']]
     ]
 ]);
 
@@ -264,28 +264,28 @@ $toolKeyboard = json_encode([
 if ($cdata2 == "herr") {
 
   $toolcmds = "<b>
-🛠️ 𝑻𝒐𝒐𝒍𝒔 🛠️
+🛠 𝑻𝒐𝒐𝒍𝒔 🛠
 ╔═════════════════╗
-├<u>𝑼𝒔𝒆𝒓𝒔 𝑰𝒏𝒇𝒐</u> » /id\n├𝑼𝒔𝒂𝒈𝒆 » <code>/id</code>
+├<u>𝙄𝙣𝙛𝙤</u> » /id\n├𝙐𝙎𝙊 » <code>/id</code>
 
-├<u>𝑰𝒑 𝑳𝒐𝒐𝒌𝒖𝒑</u> » /ip\n├𝑼𝒔𝒂𝒈𝒆 »/ip <code>1.1.1.1</code>
+├<u>𝙄𝙋 𝙇𝙤𝙤𝙠𝙪𝙥</u> » /ip\n├𝙐𝙎𝙊 »/ip <code>1.1.1.1</code>
 
-├<u>𝑩𝒊𝒏 𝑳𝒐𝒐𝒌𝒖𝒑</u> » /bin\n├𝑼𝒔𝒂𝒈𝒆 » <code>/bin 601120</code> 
+├<u>𝘽𝙞𝙣 𝙇𝙤𝙤𝙠𝙪𝙥</u> » /bin\n├𝙐𝙎𝙊 » <code>/bin 601120</code> 
 
-├<u>𝑪𝑪 𝑮𝒆𝒏𝒆𝒓𝒂𝒕𝒆 </u> » /gen\n├𝑼𝒔𝒂𝒈𝒆 » <code>/gen 601120xxx|xx|xx|xxx</code>
+├<u>𝙂𝙚𝙣</u> » /gen\n├𝙐𝙎𝙊 » <code>/gen 601120xxx|xx|xx|xxx</code>
 
-├<u>Credits Check </u> » /credits \n├𝑼𝒔𝒂𝒈𝒆 »<code> /credits Check </code>
+├<u>𝘾𝙧𝙚𝙙𝙞𝙩𝙤𝙨</u> » /credits \n├𝙐𝙎𝙊 »<code> /credits Check </code>
 
-├<u>𝑭𝒂𝒌𝒆 𝑨𝒅𝒅𝒓𝒆𝒔𝒔</u> » /fake\n├𝑼𝒔𝒂𝒈𝒆 » <code>/fake us</code>
+├<u>𝙁𝙖𝙠𝙚 𝙖𝙙𝙙𝙧𝙚𝙨</u> » /fake\n├𝙐𝙎𝙊 » <code>/fake us</code>
 
-├<u>𝑺𝑲 𝑪𝒉𝒆𝒄𝒌𝒆𝒓</u> » /sk\n├𝑼𝒔𝒂𝒈𝒆 » <code>/sk sk_live_</code>
+├<u>𝙎𝙆 𝘾𝙝𝙚𝙘𝙠</u> » /sk\n├𝙐𝙎𝙊 » <code>/sk sk_live_</code>
  
 ╚═════════════════╝
 
                </b>";
   
     // Change this to your video URL
-    $videoUrl = "https://t.me/DartNetc/6";
+    $videoUrl = "https://t.me/chkTest09/5";
 
     $inputMediaVideo = json_encode([
         'type' => 'video',
@@ -303,16 +303,16 @@ if ($cdata2 == "herr") {
 
 //=============PRICE===============//
 if ($cdata2 == "price") {
-    $priceText = "<b>\n" . str_repeat(' ', 20) . "『 𝑷𝒓𝒊𝒄𝒆 💸』" . str_repeat(' ', 20) . "\n╔═════════════════╗\n •├3 𝑫𝒂𝒚𝒔 𝑷𝒍𝒂𝒏 ⇢ 2$\n •├7 𝑫𝒂𝒚𝒔 𝑷𝒍𝒂𝒏 ⇢ 4$\n •├15 𝑫𝒂𝒚𝒔 𝑷𝒍𝒂𝒏 ⇢ 7$\n •├30 𝑫𝒂𝒚𝒔 𝑷𝒍𝒂𝒏 ⇢ 12$\n╚═════════════════╝\n •├Dev ➳ <code>@InfinityHackersKE</code>\n━━━━━━━━━━━━━━━━━━━</b>";
+    $priceText = "<b>\n" . str_repeat(' ', 20) . "『 𝙋𝙧𝙚𝙘𝙞𝙤𝙨 』" . str_repeat(' ', 20) . "\n╔═════════════════╗\n •├15 𝘿𝙞𝙖𝙨 ⇢ 3.5$\n •├30 𝘿𝙞𝙖𝙨 ⇢ 5$\n╚═════════════════╝\n •𝙎𝙀𝙇𝙇𝙀𝙍 ➳ <code>@SKYY970</code>\n━━━━━━━━━━━━━━━━━━━</b>";
 
     $priceKeyboard = json_encode([
         'inline_keyboard' => [
-            [['text' => '𝑯𝑶𝑴𝑬', 'callback_data' => 'back2'], ['text' => '𝑩𝑼𝒀', 'url' => 'https://t.meEscaliBud']]
+            [['text' => '𝙄𝙉𝙄𝘾𝙄𝙊', 'callback_data' => 'back2'], ['text' => '𝙎𝙀𝙇𝙇𝙀𝙍', 'url' => 'https://t.me/SKYY970']]
         ]
     ]);
 
     // Change this to your video URL
-    $videoUrl = "https://t.me/DartNetc/6";
+    $videoUrl = "https://t.me/chkTest09/5";
 
     $inputMediaVideo = json_encode([
         'type' => 'video',
@@ -333,7 +333,7 @@ if ($cdata2 == "finalize") {
 
     bot('answerCallbackQuery', [
       'callback_query_id' => $callbackid,
-      'text' => "Not Allowed,Open your own Menu ❌",
+      'text' => "Not Allowed ❌",
       "show_alert" => true
     ]);
 
@@ -349,16 +349,16 @@ file_get_contents("https://api.telegram.org/bot$botToken/deleteMessage?chat_id=$
 //========finalize end=========//
 $channel = json_encode([
     'inline_keyboard' => [
-        [['text' => "𝗚𝗿𝗼𝘂𝗽 ", 'url' => "https://t.me/InfinityHackersKE"], ['text' => "𝗖𝗵𝗮𝗻𝗻𝗲𝗹", 'url' => "https://t.me/InfinityHack3rs"]],
-        [['text' => "𝗕𝗔𝗖𝗞 ", 'callback_data' => 'back2']]
+        [['text' => "𝙂𝙧𝙪𝙥𝙤 ", 'url' => "https://t.me/hexnynechkgroup"], ['text' => "𝘾𝙖𝙣𝙖𝙡", 'url' => "https://t.me/chkTest09"]],
+        [['text' => "𝘼𝙏𝙍𝘼𝙎 ", 'callback_data' => 'back2']]
     ]
 ]);
 
 if ($cdata2 == "channel") {
-    $channelText = "<b>𝑱𝒐𝒊𝒏 𝒐𝒖𝒓 𝑶𝒇𝒇𝒊𝒄𝒊𝒂𝒍 𝑮𝒓𝒐𝒖𝒑 𝒂𝒏𝒅 𝑪𝒉𝒂𝒏𝒏𝒆𝒍</b>";
+    $channelText = "<b>✞</b>";
     
     // Change this to your video URL
-    $videoUrl = "https://t.me/DartNetc/6";
+    $videoUrl = "https://t.me/chkTest09/5";
 
     $inputMediaVideo = json_encode([
         'type' => 'video',
@@ -374,25 +374,25 @@ file_get_contents("https://api.telegram.org/bot$botToken/editMessageMedia?chat_i
 
 //==========back and close========//
 if ($cdata2 == "back2") {
-    $backtxt = ("<b>𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒎𝒚 𝒄𝒐𝒎𝒎𝒂𝒏𝒅 𝒔𝒆𝒄𝒕𝒊𝒐𝒏 $firstname
+    $backtxt = ("<b>𝘾𝙊𝙈𝘼𝙉𝘿𝙊𝙎 $firstname
     
-𝑬𝒙𝒑𝒍𝒐𝒓𝒆 𝒎𝒆 𝒎𝒐𝒓𝒆 𝒃𝒚 𝒄𝒍𝒊𝒄𝒌𝒊𝒏𝒈 𝒕𝒉𝒆 𝒃𝒖𝒕𝒕𝒐𝒏𝒔 𝒃𝒆𝒍𝒐𝒘</b>");
+</b>");
     
     // Change this to your video url
-    $backVideoUrl = "https://t.me/DartNetc/6"; 
+    $backVideoUrl = "https://t.me/chkTest09/5"; 
 
     $keyboard2 = json_encode([
         'inline_keyboard' => [
             [
-                ['text' => '𝗚𝗔𝗧𝗘𝗦', 'callback_data' => 'gates'],
-                ['text' => '𝗧𝗼𝗼𝗹𝘀', 'callback_data' => 'herr'],
-                ['text' => '𝗣𝗿𝗶𝗰𝗲 ', 'callback_data' => 'price'],
+                ['text' => '𝙂𝙖𝙩𝙚𝙨', 'callback_data' => 'gates'],
+                ['text' => '𝙏𝙤𝙤𝙡𝙨', 'callback_data' => 'herr'],
+                ['text' => '𝙋𝙧𝙚𝙘𝙞𝙤𝙨 ', 'callback_data' => 'price'],
             ],
             [
-                ['text' => '𝗙𝗶𝗻𝗮𝗹𝗶𝘇𝗲', 'callback_data' => 'finalize'],
+                ['text' => '𝙁𝙞𝙣𝙖𝙡𝙞𝙯𝙖𝙧', 'callback_data' => 'finalize'],
             ],
             [
-                ['text' => '𝗢𝗳𝗳𝗶𝗰𝗶𝗮𝗹 𝗚𝗿𝗼𝘂𝗽 ', 'callback_data' => 'channel'],
+                ['text' => '𝘾𝙖𝙣𝙖𝙡 ', 'callback_data' => 'channel'],
             ],
         ]
     ]);
