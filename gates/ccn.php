@@ -590,7 +590,7 @@ if (
 [†] sᴛᴀᴛᴜs ★ <code> Live ✅ </code>
 [†] ʀᴇsᴘᴏɴsᴇ ★ <code> Thanks for your donation!. </code>
 ━━━━━━━━━━━━━━━━━━
-[†] 𝘽𝙄𝙉: ↯<code>$bank</code>
+[†] 𝘽𝙄𝙉: <code>$bank</code>
 [†] 𝘽𝘼𝙉𝙆: <code>$brand</code>
 [†] 𝙏𝙔𝙋𝙀: <code>$type</code>
 [†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
@@ -617,7 +617,7 @@ $resp = "<b>
 [†] sᴛᴀᴛᴜs ★ <code> Live ✅ </code>
 [†] ʀᴇsᴘᴏɴsᴇ ★ <code> insufficient funds. </code>
 ━━━━━━━━━━━━━━━━━━
-[†] 𝘽𝙄𝙉: ↯<code>$bank</code>
+[†] 𝘽𝙄𝙉: <code>$bank</code>
 [†] 𝘽𝘼𝙉𝙆: <code>$brand</code>
 [†] 𝙏𝙔𝙋𝙀: <code>$type</code>
 [†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
@@ -642,7 +642,7 @@ $resp = "<b>
 [†] sᴛᴀᴛᴜs ★ <code> Live ✅ </code>
 [†] ʀᴇsᴘᴏɴsᴇ ★ <code> incorrect_cvc </code>
 ━━━━━━━━━━━━━━━━━━
-[†] 𝘽𝙄𝙉: ↯<code>$bank</code>
+[†] 𝘽𝙄𝙉: <code>$bank</code>
 [†] 𝘽𝘼𝙉𝙆: <code>$brand</code>
 [†] 𝙏𝙔𝙋𝙀: <code>$type</code>
 [†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
@@ -666,7 +666,7 @@ $resp = "<b>
 [†] sᴛᴀᴛᴜs ★ <code> Live ✅ </code>
 [†] ʀᴇsᴘᴏɴsᴇ ★ <code> Your card does not support this type of purchase </code>
 ━━━━━━━━━━━━━━━━━━
-[†] 𝘽𝙄𝙉: ↯<code>$bank</code>
+[†] 𝘽𝙄𝙉: <code>$bank</code>
 [†] 𝘽𝘼𝙉𝙆: <code>$brand</code>
 [†] 𝙏𝙔𝙋𝙀: <code>$type</code>
 [†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
@@ -689,7 +689,7 @@ $resp = "<b>
 [†] sᴛᴀᴛᴜs ★ <code> Live ✅ </code>
 [†] ʀᴇsᴘᴏɴsᴇ ★ <code> 3D_Req </code>
 ━━━━━━━━━━━━━━━━━━
-[†] 𝘽𝙄𝙉: ↯<code>$bank</code>
+[†] 𝘽𝙄𝙉: <code>$bank</code>
 [†] 𝘽𝘼𝙉𝙆: <code>$brand</code>
 [†] 𝙏𝙔𝙋𝙀: <code>$type</code>
 [†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
@@ -713,7 +713,7 @@ $resp = "<b>
 [†] sᴛᴀᴛᴜs ★ Dead 
 [†] ʀᴇsᴘᴏɴsᴇ ★ <code>$msg </code>
 ━━━━━━━━━━━━━━━━━━
-[†] 𝘽𝙄𝙉: ↯<code>$bank</code>
+[†] 𝘽𝙄𝙉: <code>$bank</code>
 [†] 𝘽𝘼𝙉𝙆: <code>$brand</code>
 [†] 𝙏𝙔𝙋𝙀: <code>$type</code>
 [†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
