@@ -472,13 +472,13 @@ if (
 [†] sᴛᴀᴛᴜs CHANGE 🟢
 [†] ʀᴇsᴘᴏɴsᴇ <code> Thanks for your donation </code>
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗕𝗜𝗡 𝗜𝗻𝗳𝗼 <code>$bank</code>
-[↯] 𝗕𝗮𝗻𝗸 <code>$brand</code>
-[↯] 𝗧𝗬𝗣𝗘 <code>$type</code>
-[↯] 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 <code>$name $emoji</code>
+[†] 𝘽𝙄𝙉: <code>$bank</code>
+[†] 𝘽𝘼𝙉𝙆: <code>$brand</code>
+[†] 𝙏𝙔𝙋𝙀: <code>$type</code>
+[†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗣𝗥𝗢𝗫𝗬 <code>$r.XXX.XXX.XX Live ✅</code>
-[↯] 𝗧𝗜𝗠𝗘 <code>$time seconds</code> 
+[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
+[†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 [↯] 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
 
 
@@ -505,13 +505,13 @@ $resp = "<b>
 [†] sᴛᴀᴛᴜs LIVE 
 [†] ʀᴇsᴘᴏɴsᴇ <code>CCN CHANGE 2$ </code>
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗕𝗜𝗡 𝗜𝗻𝗳𝗼 <code>$bank</code>
-[↯] 𝗕𝗮𝗻𝗸 <code>$brand</code>
-[↯] 𝗧𝗬𝗣𝗘 <code>$type</code>
-[↯] 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 <code>$name $emoji</code>
+[†] 𝘽𝙄𝙉: <code>$bank</code>
+[†] 𝘽𝘼𝙉𝙆: <code>$brand</code>
+[†] 𝙏𝙔𝙋𝙀: <code>$type</code>
+[†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗣𝗥𝗢𝗫𝗬 <code>$r.XXX.XXX.XX Live ✅</code>
-[↯] 𝗧𝗜𝗠𝗘 <code>$time seconds</code> 
+[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
+[†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
 
 
@@ -534,13 +534,13 @@ $resp = "<b>
 [†] sᴛᴀᴛᴜs Live 
 [†] ʀᴇsᴘᴏɴsᴇ <code> CCN CHANGE 1$ ✅ </code>
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗕𝗜𝗡 𝗜𝗻𝗳𝗼 <code>$bank</code>
-[↯] 𝗕𝗮𝗻𝗸 <code>$brand</code>
-[↯] 𝗧𝗬𝗣𝗘 <code>$type</code>
-[↯] 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 <code>$name $emoji</code>
+[†] 𝘽𝙄𝙉: <code>$bank</code>
+[†] 𝘽𝘼𝙉𝙆: <code>$brand</code>
+[†] 𝙏𝙔𝙋𝙀: <code>$type</code>
+[†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗣𝗥𝗢𝗫𝗬 <code>$r.XXX.XXX.XX Live ✅</code>
-[↯] 𝗧𝗜𝗠𝗘 <code>$time seconds</code> 
+[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
+[†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
 
 
@@ -559,13 +559,13 @@ $resp = "<b>
 [†] sᴛᴀᴛᴜs Dead 
 [†] ʀᴇsᴘᴏɴsᴇ <code>$msg </code>
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗕𝗜𝗡 𝗜𝗻𝗳𝗼 <code>$bank</code>
-[↯] 𝗕𝗮𝗻𝗸 <code>$brand</code>
-[↯] 𝗧𝗬𝗣𝗘 <code>$type</code>
-[↯] 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 <code>$name $emoji</code>
+[†] 𝘽𝙄𝙉: <code>$bank</code>
+[†] 𝘽𝘼𝙉𝙆: <code>$brand</code>
+[†] 𝙏𝙔𝙋𝙀: <code>$type</code>
+[†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗣𝗥𝗢𝗫𝗬 <code>$r.XXX.XXX.XX Live ✅</code>
-[↯] 𝗧𝗜𝗠𝗘 <code>$time seconds</code> 
+[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
+[†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
 
 
@@ -583,13 +583,13 @@ $resp = "<b>
 [†] sᴛᴀᴛᴜs Dead 
 [†] ʀᴇsᴘᴏɴsᴇ <code>404 Error</code>
 ━━━━━━━━━━━━━━━━━━
-[M] 𝗕𝗜𝗡 𝗜𝗻𝗳𝗼 <code>$bank</code>
-[M] 𝗕𝗮𝗻𝗸 <code>$brand</code>
-[M] 𝗧𝗬𝗣𝗘 <code>$type</code>
-[M] 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 <code>$name $emoji</code>
+[†] 𝘽𝙄𝙉: <code>$bank</code>
+[†] 𝘽𝘼𝙉𝙆: <code>$brand</code>
+[†] 𝙏𝙔𝙋𝙀: <code>$type</code>
+[†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━━━
-[M] 𝗣𝗥𝗢𝗫𝗬 <code>$r.XXX.XXX.XX Live ✅</code>
-[M] 𝗧𝗜𝗠𝗘 <code>$time seconds</code> 
+[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
+[†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
 
 
@@ -607,13 +607,13 @@ $resp = "<b>
 [†] sᴛᴀᴛᴜs Dead 
 [†] ʀᴇsᴘᴏɴsᴇ <code>$msg </code>
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗕𝗜𝗡 𝗜𝗻𝗳𝗼 <code>$bank</code>
-[↯] 𝗕𝗮𝗻𝗸 <code>$brand</code>
-[↯] 𝗧𝗬𝗣𝗘 <code>$type</code>
-[↯] 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 <code>$name $emoji</code>
+[†] 𝘽𝙄𝙉: <code>$bank</code>
+[†] 𝘽𝘼𝙉𝙆: <code>$brand</code>
+[†] 𝙏𝙔𝙋𝙀: <code>$type</code>
+[†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━━━
-[↯] 𝗣𝗥𝗢𝗫𝗬 <code> $r.XXX.XXX.XX Live ✅</code>
-[↯] 𝗧𝗜𝗠𝗘 <code>$time seconds</code> 
+[†] 𝙋𝙧𝙤𝙭𝙮 <code> $r.XXX.XXX.XX Live ✅</code>
+[†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
 
 
