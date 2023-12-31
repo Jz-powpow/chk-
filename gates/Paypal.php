@@ -482,7 +482,7 @@ if (
 [†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━━━
 [†] 𝙋𝙧𝙤𝙭𝙮  <code>$r.XXX.XXX.XX Live ✅</code>
-[†] 𝗧𝗜𝗠𝗘 ↯ <code>$time seconds</code> 
+[†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username <code>[$rank]</code>
 
 
@@ -515,7 +515,7 @@ $resp = "<b>
 [†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━━━
 [†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
-[†] 𝗧𝗜𝗠𝗘 ↯ <code>$time seconds</code> 
+[†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username <code>[$rank]</code>
 
 
@@ -544,7 +544,7 @@ $resp = "<b>
 [†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━━━
 [†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
-[†] 𝗧𝗜𝗠𝗘 ↯ <code>$time seconds</code> 
+[†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username <code>[$rank]</code>
 
 </b>";
@@ -568,7 +568,7 @@ $resp = "<b>
 [†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━━━
 [†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
-[†] 𝗧𝗜𝗠𝗘 ↯ <code>$time seconds</code> 
+[†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username <code>[$rank]</code>
 
 
