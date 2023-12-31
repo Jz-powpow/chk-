@@ -117,7 +117,7 @@ $sent_message_id = send_reply($chatId, $message_id, $keyboard, "<b>
 [†] ʀᴇsᴘᴏɴsᴇ ★  2001 Insufficient Funds?
 ━━━━━━━━━━━━━━━━━━
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username/<code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 ━━━━━━━━━━━━━━━━━━</b>");
 
 function value($str,$find_start,$find_end)
@@ -199,7 +199,7 @@ sleep(1);
 [†] ʀᴇsᴘᴏɴsᴇ ★ 81724: Duplicate card exists?
 ━━━━━━━━━
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username/<code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 ━━━━━━━━━━━━━━━━━━</b>");
 
   //==================[Randomizing Details]======================//
@@ -289,7 +289,7 @@ sleep(1);
 [†] ʀᴇsᴘᴏɴsᴇ ★ 2044: Declined - Call Issuer?
 ━━━━━━━━━━━━━━━━━━
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username/<code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 ━━━━━━━━━━━━━━━━━━</b>");
 
 
@@ -350,7 +350,7 @@ sleep(1);
 [†] ʀᴇsᴘᴏɴsᴇ ★ cvv: Gateway Rejected: cvv?
 ━━━━━━━━━━━━━━━━━━
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username/<code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 ━━━━━━━━━━━━━━━━━━</b>");
 //=======================[5 REQ]==================================//
 $ch = curl_init();
@@ -469,7 +469,7 @@ sleep(1);
 [†] ʀᴇsᴘᴏɴsᴇ ★ cvv: Gateway Rejected: cvv?
 ━━━━━━━━━━━━━━━━━━
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username/<code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 ━━━━━━━━━━━━━━━━━━</b>");
 $end_time = microtime(true);
 $time = number_format($end_time - $start_time, 2);
@@ -492,7 +492,7 @@ if (
 ═════『』═════
 ━━━━━━━━━━━━━━━━━━
 [†] ᴄᴀʀᴅ ★ <code>$lista</code>
-[†] sᴛᴀᴛᴜs ★ Approved 🟢
+[†] sᴛᴀᴛᴜs ★ Approved ✅
 [†] ʀᴇsᴘᴏɴsᴇ ★ <code> Thanks for your donation </code>
 ━━━━━━━━━━━━━━━━━━
 [†] 𝘽𝙄𝙉: <code>$bank</code>
@@ -503,7 +503,7 @@ if (
 [†] 𝙋𝙧𝙤𝙭𝙮 ↯<code>$r.XXX.XXX.XX Live ✅</code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 
 </b>";
 sleep(1);
@@ -525,7 +525,7 @@ $resp = "<b>
 𝗕𝗿𝗮𝗶𝗻𝘁𝗿𝗲𝗲 𝗔𝗽𝗽𝗿𝗼𝘃𝗲𝗱 ✅
 ━━━━━━━━━━━━━━━━━━
 [†] ᴄᴀʀᴅ ★ <code>$lista</code>
-[†] sᴛᴀᴛᴜs ★ Approved 🟢
+[†] sᴛᴀᴛᴜs ★ Approved ✅
 [†] ʀᴇsᴘᴏɴsᴇ ★ <code>1000: Approved </code>
 ━━━━━━━━━━━━━━━━━━
 [†] 𝘽𝙄𝙉: <code>$bank</code>
@@ -536,7 +536,7 @@ $resp = "<b>
 [†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 
 </b>";
 
@@ -554,7 +554,7 @@ $resp = "<b>
 𝗕𝗿𝗮𝗶𝗻𝘁𝗿𝗲𝗲 𝗔𝗽𝗽𝗿𝗼𝘃𝗲𝗱 ✅
 ━━━━━━━━━━━━━━━━━━
 [†] ᴄᴀʀᴅ ★ <code>$lista</code>
-[†] sᴛᴀᴛᴜs ★ Live 🟢
+[†] sᴛᴀᴛᴜs ★ Live ✅
 [†] ʀᴇsᴘᴏɴsᴇ ★ <code> 2010: Card Issuer Declined CVV </code>
 ━━━━━━━━━━━━━━━━━━
 [†] 𝘽𝙄𝙉: <code>$bank</code>
@@ -565,7 +565,7 @@ $resp = "<b>
 [†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 
 </b>";
 
@@ -576,10 +576,10 @@ edit_sent_message($chatId, $sent_message_id, $resp);
 
 elseif(strpos($result2, "Error updating default payment method. Your card was declined.")) {
 $resp = "<b>
-𝗕𝗿𝗮𝗶𝗻𝘁𝗿𝗲𝗲 ❌
+𝗕𝗿𝗮𝗶𝗻𝘁𝗿𝗲𝗲 Auth
 ━━━━━━━━━━━━━━━━━━
 [†] ᴄᴀʀᴅ ★ <code>$lista</code>
-[†] sᴛᴀᴛᴜs ★ Dead 🔴
+[†] sᴛᴀᴛᴜs ★ Dead ❌
 [†] ʀᴇsᴘᴏɴsᴇ ★ <code>$msg </code>
 ━━━━━━━━━━━━━━━━━━
 [†] 𝘽𝙄𝙉: <code>$bank</code>
@@ -587,10 +587,10 @@ $resp = "<b>
 [†] 𝙏𝙔𝙋𝙀: <code>$type</code>
 [†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━━━
-[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
+[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live </code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 
   </b>";
 
@@ -600,10 +600,10 @@ edit_sent_message($chatId, $sent_message_id, $resp);
 
 elseif(strpos($result2, "Unknown error generating account. Please contact us to set up your membership.")) {
 $resp = "<b>
- [火]Hermes Auth 🌩
+ [火]Hermes Auth 
 ━━━━━━━━━━━━━
 [†] ᴄᴀʀᴅ ★ <code>$lista</code>
-[†] sᴛᴀᴛᴜs ★ Dead 🔴
+[†] sᴛᴀᴛᴜs ★ Dead ❌
 [†] ʀᴇsᴘᴏɴsᴇ ★ <code>404 Error</code>
 ━━━━━━━━━━━━━━━━━━
 [†] 𝘽𝙄𝙉: <code>$bank</code>
@@ -611,10 +611,10 @@ $resp = "<b>
 [†] 𝙏𝙔𝙋𝙀: <code>$type</code>
 [†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━━━
-[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
+[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live </code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 </b>";
 
 sleep(1);
@@ -623,10 +623,10 @@ edit_sent_message($chatId, $sent_message_id, $resp);
 
 else {
 $resp = "<b>
-𝗕𝗿𝗮𝗶𝗻𝘁𝗿𝗲𝗲 ❌
+𝗕𝗿𝗮𝗶𝗻𝘁𝗿𝗲𝗲 Auth
 ━━━━━━━━━━━━━━━━━━
 [†] ᴄᴀʀᴅ ★ <code>$lista</code>
-[†] sᴛᴀᴛᴜs ★ Dead 🔴
+[†] sᴛᴀᴛᴜs ★ Dead ❌
 [†] ʀᴇsᴘᴏɴsᴇ ★ <code>$msg </code>
 ━━━━━━━━━━━━━━━━━━
 [†] 𝘽𝙄𝙉: <code>$bank</code>
@@ -634,10 +634,10 @@ $resp = "<b>
 [†] 𝙏𝙔𝙋𝙀: <code>$type</code>
 [†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━━━
-[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
+[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live </code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 
   </b>";
 
