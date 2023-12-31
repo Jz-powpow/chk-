@@ -584,7 +584,7 @@ if (
 ) {
 
   $resp = "<b>
- [火]Stripe Charge 1$ 🌩
+ [火]Stripe
 ━━━━━━━━━━━━━━━━━━
 [†] ᴄᴀʀᴅ ★ <code>$lista</code>
 [†] sᴛᴀᴛᴜs ★ <code> Live ✅ </code>
@@ -611,7 +611,7 @@ elseif(strpos($result3, "Your card has insufficient funds.") || strpos($result3,
 
 
 $resp = "<b>
- [火]Stripe Charge 1$ 🌩
+ [火]Stripe
 ━━━━━━━━━━━━━━━━━━
 [†] ᴄᴀʀᴅ ★ <code>$lista</code>
 [†] sᴛᴀᴛᴜs ★ <code> Live ✅ </code>
@@ -636,7 +636,7 @@ edit_sent_message($chatId, $sent_message_id, $resp);
 
 elseif(strpos($result3, 'security code is incorrect.') !== false || strpos($result3, 'security code is invalid.') !== false || strpos($result3, "incorrect_cvc") !== false) {
 $resp = "<b>
- [火]Stripe Charge 1$ 🌩
+ [火]Stripe 
 ━━━━━━━━━━━━━━━━━━
 [†] ᴄᴀʀᴅ ★ <code>$lista</code>
 [†] sᴛᴀᴛᴜs ★ <code> Live ✅ </code>
@@ -660,7 +660,7 @@ edit_sent_message($chatId, $sent_message_id, $resp);
 
 elseif(strpos($result3, "Your card does not support this type of purchase.")) {
 $resp = "<b>
- [火]Stripe Charge 1$ 🌩
+ [火]Stripe
 ━━━━━━━━━━━━━━━━━━
 [†] ᴄᴀʀᴅ ★ <code>$lista</code>
 [†] sᴛᴀᴛᴜs ★ <code> Live ✅ </code>
@@ -683,7 +683,7 @@ edit_sent_message($chatId, $sent_message_id, $resp);
 
 elseif(strpos($result3, "stripe_3ds2_fingerprint")) {
 $resp = "<b>
- [火]Stripe Charge 1$ 🌩
+ [火]Stripe 
 ━━━━━━━━━━━━━━━━━━
 [†] ᴄᴀʀᴅ ★ <code>$lista</code>
 [†] sᴛᴀᴛᴜs ★ <code> Live ✅ </code>
@@ -707,10 +707,10 @@ edit_sent_message($chatId, $sent_message_id, $resp);
 
 else {
 $resp = "<b>
- [火]Stripe Charge 1$ 🌩
+ [火]Stripe 
 ━━━━━━━━━━━━━━━━━━
 [†] ᴄᴀʀᴅ ★ <code>$lista</code>
-[†] sᴛᴀᴛᴜs ★ Dead 
+[†] sᴛᴀᴛᴜs ★ Dead ❌
 [†] ʀᴇsᴘᴏɴsᴇ ★ <code>$msg </code>
 ━━━━━━━━━━━━━━━━━━
 [†] 𝘽𝙄𝙉: <code>$bank</code>
