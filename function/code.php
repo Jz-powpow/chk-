@@ -14,7 +14,7 @@ if ((strpos($message, "/code") === 0) || (strpos($message, "!code") === 0) || (s
     $owners = file_get_contents('Database/owner.txt');
     $admins = explode("\n", $owners);
     if (!in_array($userId, $admins)) {
-        sendMessage($chatId, "𝗬𝗼𝘂 𝗮𝗿𝗲 𝗡𝗼𝘁 𝗔𝗗𝗠𝗜𝗡  ", $messageId);
+        sendMessage($chatId, "𝙉𝙊 𝙀𝙍𝙀𝙎 𝘼𝘿𝙈𝙄𝙉  ", $messageId);
     } else {
         $command = substr($message, 6);
         $command = clean($command);
@@ -43,13 +43,13 @@ if ((strpos($message, "/code") === 0) || (strpos($message, "!code") === 0) || (s
             fclose($credtf);
             $formattedCode = "<code>$code</code>";
             $messageToSend = urlencode(
-                "[↯] 𝗕𝗼𝘁 𝗨𝘀𝗲𝗿𝗻𝗮𝗺𝗲 : @IHKCCBOT \n".
-                "[↯] 𝗞𝗮𝘆 𝗖𝗿𝗲𝗮𝘁𝗲𝗱 \n" .
-                "[↯] 𝗨𝘀𝗮𝗴𝗲 /redeem\n" .
-                "[↯] 𝗞𝗮𝘆 : $formattedCode\n" .
-                "[↯] 𝗗𝗮𝘆: $expiryDays\n" .
-                "[↯] 𝗧𝗵𝗲 𝗞𝗲𝘆 𝗘𝘅𝗽𝗶𝗿𝗲𝘀: $expiryDate\n" .
-                "[↯] 𝗥𝗮𝗻𝗸: PREMIUM"
+                "[†] 𝘽𝙤𝙩: @HxNyneBOT \n".
+                "[†] 𝙆𝙚𝙮 𝙘𝙧𝙚𝙖𝙙𝙖 \n" .
+                "[†] 𝙐𝙨𝙖 /redeem\n" .
+                "[†] 𝙆𝙚𝙮: $formattedCode\n" .
+                "[†] 𝘿𝙞𝙖𝙨: $expiryDays\n" .
+                "[†] 𝙇𝙖 𝙠𝙚𝙮 𝙚𝙭𝙥𝙞𝙧𝙖 𝙚𝙣: $expiryDate\n" .
+                "[†] 𝙍𝙖𝙣𝙠: PREMIUM"
             );
             sendMessage($chatId, $messageToSend, $messageId); // using $messageId instead of $message_id_1
         }
