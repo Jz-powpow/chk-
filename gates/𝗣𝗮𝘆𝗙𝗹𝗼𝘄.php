@@ -475,7 +475,7 @@ if (
 [†] 𝙏𝙔𝙋𝙀: <code>$type</code>
 [†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━━━
-[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live </code>
+[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
 『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
@@ -500,7 +500,7 @@ $resp = "<b>
 [†] 𝙏𝙔𝙋𝙀: <code>$type</code>
 [†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name  $emoji</code>
 ━━━━━━━━━━━━━━━━━━
-[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live </code>
+[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code>
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
 『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
@@ -524,7 +524,7 @@ $resp = "<b>
 [†] 𝙏𝙔𝙋𝙀: <code>$type</code>
 [†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━━━
-[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live </code>
+[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
 『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
@@ -547,7 +547,7 @@ $resp = "<b>
 [†] 𝙏𝙔𝙋𝙀: <code>$type</code>
 [†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━━━
-[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live </code>
+[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
 『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
@@ -571,7 +571,7 @@ $resp = "<b>
 [†] 𝙏𝙔𝙋𝙀: <code>$type</code>
 [†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━━━
-[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live </code>
+[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
 『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
@@ -596,7 +596,7 @@ $resp = "<b>
 [†] 𝙏𝙔𝙋𝙀: <code>$type</code>
 [†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━━━
-[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
+[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live </code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
 『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
