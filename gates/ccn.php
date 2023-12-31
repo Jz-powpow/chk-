@@ -203,7 +203,7 @@ sleep(1);
 [†] ʀᴇsᴘᴏɴsᴇ ★  2001 Insufficient Funds?
 ━━━━━━━━━━━━━━━━━━
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username/<code>[$rank]</code>
- 
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz 
 ━━━━━━━━━━━━━━━━━━</b>");
 
   //==================[Randomizing Details]======================//
@@ -293,7 +293,7 @@ sleep(1);
 [†] ʀᴇsᴘᴏɴsᴇ ★ 81724: Duplicate card exists?
 ━━━━━━━━━
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username/<code>[$rank]</code>
- 
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz 
 ━━━━━━━━━━━━━━━━━━</b>");
 
 
@@ -333,7 +333,7 @@ sleep(1);
 [†] ʀᴇsᴘᴏɴsᴇ ★ 81724: Duplicate card exists?
 ━━━━━━━━━
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username/<code>[$rank]</code>
- 
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz 
 ━━━━━━━━━━━━━━━━━━</b>");
 //-------------------Req 2--------------//
 $ch = curl_init();
@@ -564,7 +564,7 @@ sleep(1);
 [†] ʀᴇsᴘᴏɴsᴇ ★ 81724: Duplicate card exists?
 ━━━━━━━━━
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username/<code>[$rank]</code>
- 
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz 
 ━━━━━━━━━━━━━━━━━━</b>");
 $end_time = microtime(true);
 $time = number_format($end_time - $start_time, 2);
@@ -598,7 +598,7 @@ if (
 [†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live </code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 
 </b>";
 
@@ -625,7 +625,7 @@ $resp = "<b>
 [†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live </code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 
 </b>";
 
@@ -650,7 +650,7 @@ $resp = "<b>
 [†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live </code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 
 </b>";
 
@@ -674,7 +674,7 @@ $resp = "<b>
 [†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live </code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 
 </b>";
 sleep(1);
@@ -697,7 +697,7 @@ $resp = "<b>
 [†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live </code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 </b>";
 
 sleep(1);
@@ -721,7 +721,7 @@ $resp = "<b>
 [†] 𝙋𝙧𝙤𝙭𝙮 <code> $r.XXX.XXX.XX Live </code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
   </b>";
 
 sleep(1);
