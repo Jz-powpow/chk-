@@ -120,6 +120,7 @@ $sent_message_id = send_reply($chatId, $message_id, $keyboard, "<b>
 [↯] 𝗚𝗔𝗧𝗘𝗪𝗔𝗬 ★  2001 Insufficient Funds?
 ━━━━━━━━━━━━━━━━━━
 [↯] 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username/<code>[$rank]</code>
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 ━━━━━━━━━━━━━━━━━━</b>");
 
 function value($str,$find_start,$find_end)
@@ -201,7 +202,7 @@ sleep(1);
 [†] ʀᴇsᴘᴏɴsᴇ ★ 81724: Duplicate card exists?
 ━━━━━━━━━
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username/<code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 ━━━━━━━━━━━━━━━━━━</b>");
 
   //==================[Randomizing Details]======================//
@@ -291,7 +292,7 @@ sleep(1);
 [†] ʀᴇsᴘᴏɴsᴇ ★ 2044: Declined - Call Issuer?
 ━━━━━━━━━━━━━━━━━━
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username/<code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 ━━━━━━━━━━━━━━━━━━</b>");
 
 
@@ -352,7 +353,7 @@ sleep(1);
 [†] ʀᴇsᴘᴏɴsᴇ ★ cvv: Gateway Rejected: cvv?
 ━━━━━━━━━━━━━━━━━━
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username/<code>[$rank]</code>
- 
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz 
 ━━━━━━━━━━━━━━━━━━</b>");
 //-------------------Req 2--------------//
 $ch = curl_init();
@@ -593,6 +594,7 @@ sleep(1);
 [†] ʀᴇsᴘᴏɴsᴇ ★ cvv: Gateway Rejected: cvv?
 ━━━━━━━━━━━━━━━━━━
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username/<code>[$rank]</code> 
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 ━━━━━━━━━━━━━━━━━━</b>");
 $end_time = microtime(true);
 $time = number_format($end_time - $start_time, 2);
@@ -627,7 +629,7 @@ if (
 [†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 
 </b>";
 
@@ -654,7 +656,7 @@ $resp = "<b>
 [†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 
 </b>";
 
@@ -680,7 +682,7 @@ $resp = "<b>
 [†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 </b>";
 
 sleep(1);
@@ -704,7 +706,7 @@ $resp = "<b>
 [†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 
 </b>";
 
@@ -729,7 +731,7 @@ $resp = "<b>
 [†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 
 </b>";
 
@@ -752,7 +754,7 @@ $resp = "<b>
 [†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 
   </b>";
 
@@ -776,7 +778,7 @@ $resp = "<b>
 [†] 𝙋𝙧𝙤𝙭𝙮 <code> $r.XXX.XXX.XX Live ✅</code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username <code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 
   </b>";
 sleep(1);
