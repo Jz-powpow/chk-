@@ -21,7 +21,7 @@ if (strpos($message, "/redeem") === 0) {
                 $expiryDate = date('Y-m-d', strtotime("+$expiryDays days"));
                 file_put_contents('Database/paid.txt', "$userId $expiryDate\n", FILE_APPEND);
 
-                sendMessage($chatId, "REDEEM SUCCESS ✅", $messageId);
+                sendMessage($chatId, "𝘾𝙖𝙣𝙟𝙚𝙖𝙙𝙤 𝙘𝙤𝙣 𝙚𝙭𝙞𝙩𝙤 ✅", $messageId);
             } else {
                 $newCodesAndExpiryDays[] = $line;
             }
@@ -31,7 +31,7 @@ if (strpos($message, "/redeem") === 0) {
     if ($found) {
         file_put_contents('Database/codes.txt', implode("\n", $newCodesAndExpiryDays));
     } else {
-        sendMessage($chatId, "Invalid or already redeemed code ❌.", $messageId);
+        sendMessage($chatId, "𝙄𝙣𝙫𝙖𝙡𝙞𝙙𝙤 𝙤 𝙮𝙖 𝙛𝙪𝙚 𝙘𝙖𝙣𝙟𝙚𝙖𝙙𝙤 ❌.", $messageId);
     }
 }
 ?>
