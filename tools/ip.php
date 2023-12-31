@@ -36,7 +36,7 @@ $country = trim(strip_tags(getStr($gip,'   </tr>
         <tr>')));
 
 $message = "<b>
-[火] IP FraudRisk 🌩
+[火] IP Fraud 
 ━━━━━━━━━━━━━━
 •├IP : <code>$array[0]</code>
 •├Score : <code>$score</code>
@@ -46,7 +46,7 @@ $message = "<b>
 
 •├Req: @$username/<code>[$rank]</code>
 ━━━━━━━━━━━━━━
-•├Dev: <code> @EscaliBud </code>
+•𝘿𝙚𝙫 𝙗𝙮: <code> @hexnynejz </code>
 </b>";
 
 $urlEncodedMessage = urlencode($message);
