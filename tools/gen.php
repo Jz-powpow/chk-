@@ -3,7 +3,7 @@
 function sendMessageWithInlineKeyboard($chatId, $response, $messageId = null) {
     $inline_keyboard = array(
         array(
-            array("text" => "𝑮𝒆𝒏𝒆𝒓𝒂𝒕𝒆 𝑨𝒈𝒂𝒊𝒏", "callback_data" => "/gen")
+            array("text" => "𝙍𝙀𝙂𝙀𝙉", "callback_data" => "/gen")
         )
     );
     
@@ -30,7 +30,7 @@ function sendMessageWithInlineKeyboard($chatId, $response, $messageId = null) {
 function editMessage($chatId, $messageId, $text) {
     $inline_keyboard = array(
         array(
-            array("text" => "𝑮𝒆𝒏𝒆𝒓𝒂𝒕𝒆 𝑨𝒈𝒂𝒊𝒏", "callback_data" => "/gen")
+            array("text" => "𝙍𝙀𝙂𝙀𝙉", "callback_data" => "/gen")
         )
     );
     
@@ -115,7 +115,7 @@ function generateCC($input, $quantity = 20) {
     }
 
     // Generate the response string
-$response = "<b>🧾𝑯𝒆𝒓𝒆 𝒂𝒓𝒆 𝒚𝒐𝒖𝒓 𝒄𝒂𝒓𝒅𝒔 𝑳𝒐𝒍𝒊𝒄𝒐𝒏\n\n•├𝑩𝒊𝒏 ⇾ $input\n•├𝑨𝒎𝒐𝒖𝒏𝒕 ⇾ $quantity\n╔═════════════════╗\n</b>";
+$response = "<b>•𝘾𝘾𝙨\n\n•𝘽𝙞𝙣: ⇾ $input\n•𝘾𝙖𝙣𝙩𝙞𝙙𝙖𝙙: ⇾ $quantity\n╔═════════════════╗\n</b>";
 
 foreach ($cardsResponse as $card) {
     // Access individual elements of each credit card and append to the response string
@@ -133,13 +133,13 @@ $brand = strtoupper($binInfo['scheme'] ?? '');
 $type = strtoupper($binInfo['type'] ?? '');
 $bank = isset($binInfo['bank']['name']) ? strtoupper($binInfo['bank']['name']) : '';
 
-$response .= "<b>╚═════════════════╝\n•├𝑩𝒂𝒏𝒌 » <code>$bank</code></b>\n";
-$response .= "<b>•├𝑩𝒓𝒂𝒏𝒅 » <code>$brand</code></b>\n";
-$response .= "<b>•├𝑻𝒚𝒑𝒆 » <code>$type</code></b>\n";
-$response .= "<b>•├𝑪𝒐𝒖𝒏𝒕𝒓𝒚 » <code>$name</code></b>\n";
+$response .= "<b>╚═════════════════╝\n†𝘽𝙖𝙣𝙠: » <code>$bank</code></b>\n";
+$response .= "<b>†𝘽𝙧𝙖𝙣𝙙: » <code>$brand</code></b>\n";
+$response .= "<b>†𝙏𝙮𝙥𝙚: » <code>$type</code></b>\n";
+$response .= "<b>†𝘾𝙤𝙪𝙣𝙩𝙧𝙮: » <code>$name</code></b>\n";
 
 // Append a custom footer to the response
-$response .= "<b>\n•├Dev » <code>@EscaliBud</code></b>";
+$response .= "<b>\n•├Dev » <code>@hexnynejz</code></b>";
 
     return $response;
 }
