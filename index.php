@@ -1,4 +1,5 @@
 <?php
+
 $botToken = "6778123440:AAFy-V-cHZg0xADqspnb4vA_JXD8cjNFJik";
 $website = "https://api.telegram.org/bot".$botToken;
 $update = file_get_contents('php://input');
@@ -7,13 +8,23 @@ $update = json_decode($update, TRUE);
 //global $website;
 $e = print_r($update);
 $update["message"]["chat"]["title"]; 
-$username = $update["message"]["from"]["username"];
-$newfirstname = $update["message"]["from"]["first_name"];
-$message = $update["message"]["text"];
-$message_id = $update["message"]["message_id"];
-$chatId = $update["message"]["chat"]["id"];
-$firstname = $update["message"]["from"]["first_name"];
-
+$newusername     = $update["message"]["new_chat_member"]["username"];
+$newgId          = $update["message"]["new_chat_member"]["id"];
+$newfirstname    = $update["message"]["new_chat_member"]["first_name"];
+$new_chat_member = $update["message"]["new_chat_member"];
+$message         = $update["message"]["text"];
+$message_id      = $update["message"]["message_id"];
+$chatId          = $update["message"]["chat"]["id"];
+$username2       = $update["message"]["from"]["username"];
+$firstname       = $update["message"]["from"]["first_name"];
+$cdata2          = $update["callback_query"]["data"];
+$cchatid2        = $update["callback_query"]["message"]["chat"]["id"]; 
+$username2       = $update["callback_query"]["from"]["username"];
+$firstname2      = $update["callback_query"]["from"]["first_name"];
+$userId2         = $update["callback_query"]["from"]["id"];
+$cmessage_id2    = $update["callback_query"]["message"]["message_id"]; 
+$username3       = ('@'.$username);
+// $username3       = '@'.$username2;
  $info            = json_encode($update, JSON_PRETTY_PRINT); 
 $emojid = '❌';
 $emojil = '✅';
