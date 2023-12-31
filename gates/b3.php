@@ -66,7 +66,7 @@ if (preg_match('/^(\/b3|\.b3|!b3)/', $text)) {
     $userid = $update['message']['from']['id'];
 
     if (!checkAccess($userid)) {
-        $sent_message_id = send_reply($chatId, $message_id, $keyboard, "<b> @$username You're not Premium user❌</b>", $message_id);
+        $sent_message_id = send_reply($chatId, $message_id, $keyboard, "<b> @$username 𝘕𝘖 𝘌𝘙𝘌𝘚 𝘗𝘙𝘌𝘔𝘐𝘜𝘔❌</b>", $message_id);
       exit();
     }
 $start_time = microtime(true);
@@ -77,7 +77,7 @@ $start_time = microtime(true);
   $message = substr($message, 4);
   $messageidtoedit1 = bot('sendmessage',[
       'chat_id'=>$chat_id,
-      'text'=>"<b>Wait for Result...⏳</b>",
+      'text'=>"<b>Wait for Result...</b>",
       'parse_mode'=>'html',
       'reply_to_message_id'=> $message_id
   ]);
@@ -92,7 +92,7 @@ $start_time = microtime(true);
       bot('editMessageText',[
               'chat_id'=>$chat_id,
               'message_id'=>$messageidtoedit,
-              'text'=>"Wrong Format!\n ⚠️• 𝘚𝘦𝘯𝘥 <code>/chk cc|mm|yy|cvv</code>• 𝘎𝘢𝘵𝘦𝘸𝘢𝘺 <code> Charge 1 USD</code>",
+              'text'=>"• 𝘍𝘰𝘳𝘮𝘢𝘵𝘰 𝘪𝘯𝘤𝘰𝘳𝘳𝘦𝘤𝘵𝘰!\n ⚠️• 𝘜𝘚𝘖 <code>/b3 cc|mm|yy|cvv</code>• 𝘎𝘢𝘵𝘦𝘸𝘢𝘺 <code> Charge 1 USD</code>",
               'parse_mode'=>'html',
               'disable_web_page_preview'=>'true'
               ]);
@@ -190,17 +190,17 @@ $start_time = microtime(true);
               'text'=>"
 𝗦𝗤𝗨𝗔𝗥𝗘 𝗔𝗨𝗧𝗛 ✅
 ━━━━━━━━━━━━━━━━           
-⎚ 𝗖𝗖 ⇾ <code>$lista</code>
-⎚ 𝗚𝗔𝗧𝗘𝗦: <code>SQUARE AUTH</code>
-⎚ 𝗥𝗘𝗦𝗣𝗢𝗡𝗦𝗘:<code>CCN LIVE🟢 </code>
+[†] ᴄᴀʀᴅ <code>$lista</code>
+[†] sᴛᴀᴛᴜs <code>SQUARE AUTH</code>
+[†] ʀᴇsᴘᴏɴsᴇ <code>CCN LIVE </code>
 ━━━━━━━━━━━━━━━━
-⎚ 𝗕𝗮𝗻𝗸 ⇾ <code>$bank $brand</code>
-⎚ 𝗕𝗿𝗮𝗻𝗱 ⇾ <code>$scheme </code>
-⎚ 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 ⇾ <code>$name $emoji</code>
+[†] 𝘽𝘼𝙉𝙆: <code>$bank $brand</code>
+[†] 𝘽𝙧𝙖𝙣𝙙: <code>$scheme </code>
+[†] 𝘽𝘼𝙉𝙆: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━
-⎚ 𝗧𝗶𝗺𝗲 :<code> $time seconds </code>
-⎚ 𝗣𝗿𝗼𝘅𝘆: <code>$r.XXX.XXX.XX 🟢</code>
-⎚ 𝗨𝘀𝗲𝗿𝘀:@$username <code>[$rank]</code>
+⎚ 𝗧𝗶𝗺𝗲 <code> $time seconds </code>
+⎚ 𝗣𝗿𝗼𝘅𝘆 <code>$r.XXX.XXX.XX </code>
+⎚ 𝗨𝘀𝗲𝗿 @$username <code>[$rank]</code>
   ",
               'parse_mode'=>'html',
               'disable_web_page_preview'=>'true'
@@ -213,16 +213,16 @@ $start_time = microtime(true);
               'text'=>"
 𝗦𝗤𝗨𝗔𝗥𝗘 𝗔𝗨𝗧𝗛 ❌
 ━━━━━━━━━━━━━━━━            
-⎚ 𝗖𝗖 ➔ <code>$lista</code>
-⎚ 𝗚𝗔𝗧𝗘𝗦 ➔ SQUARE AUTH 
-⎚ 𝗥𝗘𝗦𝗣𝗢𝗡𝗦𝗘 $msg 81724: Duplicate card exists in the vault. 
+[†] ᴄᴀʀᴅ <code>$lista</code>
+[†] sᴛᴀᴛᴜs SQUARE AUTH 
+[†] ʀᴇsᴘᴏɴsᴇ $msg 81724: Duplicate card exists in the vault. 
 ━━━━━━━━━━━━━━━━
-⎚ 𝗕𝗮𝗻𝗸 ⇾ $bank
-⎚ 𝗧𝘆𝗽𝗲 ⇾ $bin
-⎚ 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 ⇾ $name $emoji
+[†] 𝘽𝘼𝙉𝙆: $bank
+[†] 𝙏𝙮𝙥𝙚: $bin
+[†] 𝘽𝘼𝙉𝙆: $name $emoji
 ━━━━━━━━━━━━━━━━
-⎚ 𝗣𝗿𝗼𝘅𝘆 ⇾ 𝗟𝗶𝘃𝗲  🟢
-⎚ 𝗨𝘀𝗲𝗿𝘀:@$username <code>[$rank]</code>
+⎚ 𝗣𝗿𝗼𝘅𝘆 ⇾ 𝗟𝗶𝘃𝗲  
+⎚ 𝗨𝘀𝗲𝗿 @$username <code>[$rank]</code>
 
   ",
               'parse_mode'=>'html',
@@ -236,17 +236,17 @@ $start_time = microtime(true);
               'text'=>"
 𝗦𝗤𝗨𝗔𝗥𝗘 𝗔𝗨𝗧𝗛 ❌
 ━━━━━━━━━━━━━━━━      
-⎚ 𝗖𝗖:<code>$lista</code>
-⎚ 𝗚𝗔𝗧𝗘𝗦: <code>SQUARE AUTH</code>
-⎚ 𝗥𝗘𝗦𝗣𝗢𝗡𝗦𝗘:<code>. $msg2 $bin </code>
+[†] ᴄᴀʀᴅ <code>$lista</code>
+[†] sᴛᴀᴛᴜs <code>SQUARE AUTH</code>
+[†] ʀᴇsᴘᴏɴsᴇ <code>. $msg2 $bin </code>
 ━━━━━━━━━━━━━━━━
-⎚ 𝗕𝗮𝗻𝗸 ⇾ <code>$bank $brand </code>
-⎚ 𝗕𝗿𝗮𝗻𝗱 ⇾ <code>$scheme </code>
-⎚ 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 ⇾ <code>$name $emoji</code>
+[†] 𝘽𝘼𝙉𝙆: <code>$bank $brand </code>
+[†] 𝘽𝙧𝙖𝙣𝙙: <code>$scheme </code>
+[†] 𝘽𝘼𝙉𝙆: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━
-⎚ 𝗧𝗶𝗺𝗲 : <code>$time seconds </code>
-⎚ 𝗣𝗿𝗼𝘅𝘆: <code>$r.XXX.XXX.XX 🟢</code>
-⎚ 𝗨𝘀𝗲𝗿𝘀:@$username <code>[$rank]</code>
+⎚ 𝗧𝗶𝗺𝗲 <code>$time seconds </code>
+⎚ 𝗣𝗿𝗼𝘅𝘆 <code>$r.XXX.XXX.XX </code>
+⎚ 𝗨𝘀𝗲𝗿 @$username <code>[$rank]</code>
 
   ",
               'parse_mode'=>'html',
