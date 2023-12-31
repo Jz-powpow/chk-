@@ -5,7 +5,7 @@ $currentDate = date('Y-m-d');
     $expiryDate = "0";
 
 
-$videoURLStart = "https://t.me/ChitNgexxn/87";
+$videoURLStart = "https://t.me/chkTest09/20";
 
     $paidUsers = file('Database/paid.txt', FILE_IGNORE_NEW_LINES);
     $freeUsers = file('Database/free.txt', FILE_IGNORE_NEW_LINES);
@@ -74,7 +74,7 @@ $start_time = microtime(true);
     $message_id = $update["message"]["message_id"];
     $keyboard = "";
   
-  $sent_message_id = send_reply($chatId, $message_id, $keyboard, "<b> He is Gay $r% 😂
+  $sent_message_id = send_reply($chatId, $message_id, $keyboard, "<b> 𝙀𝙧𝙞 𝙜𝙚𝙞 :𝙫 $r% 
   </b>");
 
   sendVideox($chatId, $videoURLStart, $caption, $keyboard);
