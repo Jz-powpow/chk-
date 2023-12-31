@@ -121,7 +121,7 @@ $sent_message_id = send_reply($chatId, $message_id, $keyboard, "<b>
 [†] ʀᴇsᴘᴏɴsᴇ ★  2001 Insufficient Funds?
 ━━━━━━━━━━━━━━━━━━
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username/<code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 ━━━━━━━━━━━━━━━━━━</b>");
 
 function value($str,$find_start,$find_end)
