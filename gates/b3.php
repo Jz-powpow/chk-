@@ -62,7 +62,7 @@ $r = "0";
  
 $r = rand(0, 100);
 //=====WHO CAN CHECK FUNC END======//
-if (preg_match('/^(\/b3|\.b3|!b3)/', $text)) {
+if (preg_match('/^(\/b3|\.sq|!b3)/', $text)) {
     $userid = $update['message']['from']['id'];
 
     if (!checkAccess($userid)) {
@@ -92,7 +92,7 @@ $start_time = microtime(true);
       bot('editMessageText',[
               'chat_id'=>$chat_id,
               'message_id'=>$messageidtoedit,
-              'text'=>"• 𝘍𝘰𝘳𝘮𝘢𝘵𝘰 𝘪𝘯𝘤𝘰𝘳𝘳𝘦𝘤𝘵𝘰!\n ⚠️• 𝘜𝘚𝘖 <code>/b3 cc|mm|yy|cvv</code>• 𝘎𝘢𝘵𝘦𝘸𝘢𝘺 <code> Charge 1 USD</code>",
+              'text'=>"• 𝘍𝘰𝘳𝘮𝘢𝘵𝘰 𝘪𝘯𝘤𝘰𝘳𝘳𝘦𝘤𝘵𝘰!\n ⚠️• 𝘜𝘚𝘖 <code>/sq cc|mm|yy|cvv</code>• 𝘎𝘢𝘵𝘦𝘸𝘢𝘺 <code> Square Auth</code>",
               'parse_mode'=>'html',
               'disable_web_page_preview'=>'true'
               ]);
