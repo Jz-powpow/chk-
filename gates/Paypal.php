@@ -484,7 +484,7 @@ if (
 [†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username <code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 
 </b>";
 sleep(1);
@@ -517,7 +517,7 @@ $resp = "<b>
 [†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username <code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 
 </b>";
 
@@ -546,7 +546,7 @@ $resp = "<b>
 [†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username <code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 </b>";
 
 sleep(1);
@@ -556,7 +556,7 @@ edit_sent_message($chatId, $sent_message_id, $resp);
 
 elseif(strpos($result2, "Error updating default payment method. Your card was declined.")) {
 $resp = "<b>
-𝙋𝙖𝙮𝙋𝙖𝙡 𝗟𝗜𝗩𝗘 ❌
+𝙋𝙖𝙮𝙋𝙖𝙡 
 ━━━━━━━━━━━━━━━━━━
 [†] ᴄᴀʀᴅ ★ <code>$lista</code>
 [†] sᴛᴀᴛᴜs ★ Dead ❌
@@ -567,10 +567,10 @@ $resp = "<b>
 [†] 𝙏𝙔𝙋𝙀: <code>$type</code>
 [†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━━━
-[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
+[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live </code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username <code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 
   </b>";
 
@@ -580,7 +580,7 @@ edit_sent_message($chatId, $sent_message_id, $resp);
 
 elseif(strpos($result2, "Unknown error generating account. Please contact us to set up your membership.")) {
 $resp = "<b>
-𝙋𝙖𝙮𝙋𝙖𝙡 𝗟𝗜𝗩𝗘   
+𝙋𝙖𝙮𝙋𝙖𝙡    
 ━━━━━━━━━━━━━
 [†] ᴄᴀʀᴅ ★ <code>$lista</code>
 [†] sᴛᴀᴛᴜs ★ Dead ❌
@@ -591,10 +591,10 @@ $resp = "<b>
 [†] 𝙏𝙔𝙋𝙀: <code>$type</code>
 [†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━━━
-[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
+[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live </code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username <code>[$rank]</code>
-━━━━━━━━━━━━━━━━━━
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 
 </b>";
 
@@ -604,7 +604,7 @@ edit_sent_message($chatId, $sent_message_id, $resp);
 
 else {
 $resp = "<b>
-𝙋𝙖𝙮𝙋𝙖𝙡 𝗟𝗜𝗩𝗘 ❌
+𝙋𝙖𝙮𝙋𝙖𝙡 
 ━━━━━━━━━━━━━━━━━━
 [†] ᴄᴀʀᴅ ★ <code>$lista</code>
 [†] sᴛᴀᴛᴜs ★ Dead ❌
@@ -615,10 +615,10 @@ $resp = "<b>
 [†] 𝙏𝙔𝙋𝙀: <code>$type</code>
 [†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━━━
-[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live ✅</code>
+[†] 𝙋𝙧𝙤𝙭𝙮 <code>$r.XXX.XXX.XX Live </code>
 [†] 𝙏𝙞𝙢𝙚 <code>$time seconds</code> 
 ➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username <code>[$rank]</code>
-
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
 
   </b>";
 
