@@ -61,7 +61,7 @@ function GetStr($string, $start, $end) {
     return $str[0];
 }
 
-if ((strpos($message, "/bggn") === 0) || (strpos($message, "!bhhn") === 0) || (strpos($message, ".bhh") === 0)) {
+if ((strpos($message, "/bggn") === 0) || (strpos($message, "!bhhn") === 0) || (strpos($message, ".bin") === 0)) {
     $bin = substr($message, 5);
     $bin = substr($bin, 0, 6);
     $ch = curl_init();
@@ -88,8 +88,8 @@ if ((strpos($message, "/bggn") === 0) || (strpos($message, "!bhhn") === 0) || (s
         sendMessage($chatId, "<b>$lookup%0A%0ABin : $bin</b>", $message_id);
         exit();
     } else {
-        $lookup = '<b>火 BIN INFORMATION♻️</b>';
-        sendMessage($chatId, "<b>$lookup%0A╔═════════════════╗%0A•├BIN : <code>$bin</code>%0A•├INFO : <code>$scheme</code>%0A•├TYPE: <code>$type</code>%0A•├BRAND : <code>$brand</code>%0A•├BANK : <code>$bank</code>%0A•├COUNTRY : <code>$name</code> $emoji%0A╚═════════════════╝%0A•├CHECKED BY : @$username <code>[$rank]</code>%0A•├Dev :<code>@EscaliBud</code></b>", $message_id);
+        $lookup = '<b>☪BIN INFORMATION</b>';
+        sendMessage($chatId, "<b>$lookup%0A╔═════════════════╗%0A† 𝘽𝙞𝙣:  <code>$bin</code>%0A† 𝙄𝙣𝙛𝙤: <code>$scheme</code>%0A† 𝙏𝙮𝙥𝙚: <code>$type</code>%0A† 𝘽𝙧𝙖𝙣𝙙:  <code>$brand</code>%0A† 𝘽𝙖𝙣𝙠:  <code>$bank</code>%0A† 𝘾𝙤𝙪𝙣𝙩𝙧𝙮:  <code>$name</code> $emoji%0A╚═════════════════╝%0A➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆  @$username <code>[$rank]</code>%0A•𝘿𝙚𝙫 𝙗𝙮 :<code>@hexnynejz</code></b>", $message_id);
     }
 }
 
