@@ -201,6 +201,7 @@ $start_time = microtime(true);
 ⎚ 𝗧𝗶𝗺𝗲 <code> $time seconds </code>
 ⎚ 𝗣𝗿𝗼𝘅𝘆 <code>$r.XXX.XXX.XX </code>
 ⎚ 𝗨𝘀𝗲𝗿 @$username <code>[$rank]</code>
+ 『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz 
   ",
               'parse_mode'=>'html',
               'disable_web_page_preview'=>'true'
@@ -223,7 +224,7 @@ $start_time = microtime(true);
 ━━━━━━━━━━━━━━━━
 ⎚ 𝗣𝗿𝗼𝘅𝘆 ⇾ 𝗟𝗶𝘃𝗲  
 ⎚ 𝗨𝘀𝗲𝗿 @$username <code>[$rank]</code>
-
+ 『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
   ",
               'parse_mode'=>'html',
               'disable_web_page_preview'=>'true'
@@ -247,7 +248,7 @@ $start_time = microtime(true);
 ⎚ 𝗧𝗶𝗺𝗲 <code>$time seconds </code>
 ⎚ 𝗣𝗿𝗼𝘅𝘆 <code>$r.XXX.XXX.XX </code>
 ⎚ 𝗨𝘀𝗲𝗿 @$username <code>[$rank]</code>
-
+ 『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
   ",
               'parse_mode'=>'html',
               'disable_web_page_preview'=>'true'
