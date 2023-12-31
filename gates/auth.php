@@ -72,7 +72,7 @@ $start_time = microtime(true);
   $message = substr($message, 4);
   $messageidtoedit1 = bot('sendmessage',[
       'chat_id'=>$chat_id,
-      'text'=>"<b>Wait for Result...⏳</b>",
+      'text'=>"<b>Wait for Result...</b>",
       'parse_mode'=>'html',
       'reply_to_message_id'=> $message_id
   ]);
@@ -87,7 +87,7 @@ $start_time = microtime(true);
       bot('editMessageText',[
               'chat_id'=>$chat_id,
               'message_id'=>$messageidtoedit,
-              'text'=>"Wrong Format!\n ⚠️• 𝘚𝘦𝘯𝘥 <code>/chk cc|mm|yy|cvv</code>• 𝘎𝘢𝘵𝘦𝘸𝘢𝘺 <code>Stripe Charge 1 USD</code>",
+              'text'=>"• 𝘍𝘰𝘳𝘮𝘢𝘵𝘰 𝘪𝘯𝘤𝘰𝘳𝘳𝘦𝘤𝘵𝘰! \n ⚠️•𝘜𝘚𝘖 <code>/au cc|mm|yy|cvv</code>• 𝘎𝘢𝘵𝘦𝘸𝘢𝘺 <code>Sho Charge 1 USD</code>",
               'parse_mode'=>'html',
               'disable_web_page_preview'=>'true'
               ]);
@@ -186,17 +186,17 @@ $r = rand(0, 100);
               'message_id'=>$messageidtoedit,
               'text'=>"𝗔𝗽𝗽𝗿𝗼𝘃𝗲𝗱 ✅
 ━━━━━━━━━━━━━━━━           
-[↯] 𝗖𝗖 ⇾ <code>$lista</code>
-[↯] 𝗚𝗔𝗧𝗘𝗦: <code>Stripe Auth $1</code>
-[↯] 𝗥𝗘𝗦𝗣𝗢𝗡𝗦𝗘:<code> CVV LIVE🟢 </code>
+[†] ᴄᴀʀᴅ <code>$lista</code>
+[†] sᴛᴀᴛᴜs <code>Stripe Auth $1</code>
+[†] ʀᴇsᴘᴏɴsᴇ <code> CVV LIVE </code>
 ━━━━━━━━━━━━━━━━
-[↯] 𝗕𝗮𝗻𝗸 ⇾ <code>$bank $brand</code>
-[↯] 𝗕𝗿𝗮𝗻𝗱 ⇾ <code>$scheme </code>
-[↯] 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 ⇾ <code>$name $emoji</code>
+[†] 𝘽𝘼𝙉𝙆: <code>$bank $brand</code>
+[†] 𝘽𝙧𝙖𝙣𝙙: <code>$scheme </code>
+[†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━
-[↯] 𝗧𝗶𝗺𝗲 :<code> $time seconds </code>
-[↯] 𝗣𝗿𝗼𝘅𝘆: <code>$r.XXX.XXX.XX 🟢</code>
-[↯] 𝗨𝘀𝗲𝗿𝘀:@$username <code>[$rank]</code>
+[†] 𝗧𝗶𝗺𝗲 <code> $time seconds </code>
+[†] 𝗣𝗿𝗼𝘅𝘆 <code>$r.XXX.XXX.XX </code>
+[†] 𝗨𝘀𝗲𝗿 @$username <code>[$rank]</code>
 
   ",
               'parse_mode'=>'html',
@@ -209,17 +209,17 @@ $r = rand(0, 100);
               'message_id'=>$messageidtoedit,
               'text'=>"𝗗𝗲𝗰𝗹𝗶𝗻𝗲𝗱 ❌
   ━━━━━━━━━━━━━━━━            
-[↯] 𝗖𝗖 ➔ <code>$lista</code>
-[↯] 𝗚𝗔𝗧𝗘𝗦 ➔ Stripe Auth $1
-[↯] 𝗥𝗘𝗦𝗣𝗢𝗡𝗦𝗘 $msg 81724: Duplicate card exists in the vault. 
+[†] ᴄᴀʀᴅ <code>$lista</code>
+[†] sᴛᴀᴛᴜs Stripe Auth $1
+[†] ʀᴇsᴘᴏɴsᴇ $msg 81724: Duplicate card exists in the vault. 
   ━━━━━━━━━━━━━━━━
-[↯] 𝗕𝗮𝗻𝗸 ⇾ $bank
-[↯] 𝗧𝘆𝗽𝗲 ⇾ $bin
-[↯] 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 ⇾ $name $emoji
+[†] 𝘽𝘼𝙉𝙆: $bank
+[†] 𝙏𝙮𝙥𝙚: $bin
+[†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: $name $emoji
   ━━━━━━━━━━━━━━━━
-[↯] 𝗣𝗿𝗼𝘅𝘆 ⇾ 𝗟𝗶𝘃𝗲  🟢
-[↯] 𝗨𝘀𝗲𝗿𝘀:@$username <code>[$rank]</code>
-[↯] 𝗕𝗼𝘁 𝗕𝘆 ➔ <a href='t.me/EscaliBud'> ᴋʀᴇͥsͣsͫᴡᴇʟʟ
+[†] 𝗣𝗿𝗼𝘅𝘆 ⇾ 𝗟𝗶𝘃𝗲  
+[†] 𝗨𝘀𝗲𝗿 @$username <code>[$rank]</code>
+『 𝗕𝗢𝗧 𝗕𝗬 <a href='t.me/hexnynejz'> 🅷🅴🆇🅽🆈🅽🅴🅲🅷🅺
   </a>━━━━━━━━━━━━━━━━
   ",
               'parse_mode'=>'html',
@@ -232,18 +232,18 @@ $r = rand(0, 100);
               'message_id'=>$messageidtoedit,
               'text'=>"𝗗𝗲𝗰𝗹𝗶𝗻𝗲𝗱 ❌
 ━━━━━━━━━━━━━━━━      
-[↯] 𝗖𝗖:<code>$lista</code>
-[↯] 𝗚𝗔𝗧𝗘𝗦: <code>Stripe Auth $1</code>
-[↯] 𝗥𝗘𝗦𝗣𝗢𝗡𝗦𝗘:<code>. $msg2 $bin </code>
+[†] ᴄᴀʀᴅ <code>$lista</code>
+[†] sᴛᴀᴛᴜs <code>Stripe Auth $1</code>
+[†] ʀᴇsᴘᴏɴsᴇ <code>. $msg2 $bin </code>
 ━━━━━━━━━━━━━━━━
-[↯] 𝗕𝗮𝗻𝗸 ⇾ <code>$bank $brand </code>
-[↯] 𝗕𝗿𝗮𝗻𝗱 ⇾ <code>$scheme </code>
-[↯] 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 ⇾ <code>$name $emoji</code>
+[†] 𝘽𝘼𝙉𝙆: <code>$bank $brand </code>
+[†] 𝘽𝙧𝙖𝙣𝙙: <code>$scheme </code>
+[†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
 ━━━━━━━━━━━━━━━━
-[↯] 𝗧𝗶𝗺𝗲 : <code>$time seconds </code>
-[↯] 𝗣𝗿𝗼𝘅𝘆: <code>$r.XXX.XXX.XX 🟢</code>
-[↯] 𝗨𝘀𝗲𝗿𝘀:@$username <code>[$rank]</code>
-[↯] 𝗕𝗼𝘁 𝗕𝘆:<a href='t.me/EscaliBud'> ᴋʀᴇͥsͣsͫᴡᴇʟʟ™</a>
+[†] 𝗧𝗶𝗺𝗲 : <code>$time seconds </code>
+[†] 𝗣𝗿𝗼𝘅𝘆: <code>$r.XXX.XXX.XX </code>
+[†] 𝗨𝘀𝗲𝗿 @$username <code>[$rank]</code>
+『 𝗕𝗢𝗧 𝗕𝗬 <a href='t.me/hexnynejz'> 🅷🅴🆇🅽🆈🅽🅴🅲🅷🅺 </a>
 ━━━━━━━━━━━━━━━━
   ",
               'parse_mode'=>'html',
