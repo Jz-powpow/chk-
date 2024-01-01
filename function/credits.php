@@ -32,8 +32,7 @@ function checkAndUpdateUserStatus($userId, $username, $firstname, $chatId, $mess
 
     $messageToSend = "<b>
 † 𝙐𝙨𝙚𝙧: @$username 
-† 𝙐𝙨𝙚𝙧𝙄𝘿:  <code>$userId</code>
-† 𝙐𝙨𝙚𝙧 𝙐𝙍𝙇: $firstname
+† 𝙄𝘿:  <code>$userId</code>
 † 𝙍𝙖𝙣𝙠: $rank
 † 𝙀𝙭𝙥𝙞𝙧𝙖𝙘𝙞𝙤𝙣: $expiryDate</b>";
 
