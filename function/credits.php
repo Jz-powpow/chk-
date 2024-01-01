@@ -12,7 +12,7 @@ function checkAndUpdateUserStatus($userId, $username, $firstname, $chatId, $mess
 
     if(in_array($userId, $owners)) {
         $rank = "OWNER";
-       $expiryDate = "UNTIL DEAD"; 
+       $expiryDate = "NUNCA"; 
     } else {
         foreach ($paidUsers as $index => $line) {
             list($userIdFromFile, $userExpiryDate) = explode(" ", $line);
