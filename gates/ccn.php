@@ -76,7 +76,7 @@ $start_time = microtime(true);
 
 //====ANTISPAM AND WRONG FORMAT====//
     if (strlen($message) <= 4) {
-            sendMessage($chatId, '<b>• 𝘍𝘰𝘳𝘮𝘢𝘵𝘰 𝘪𝘯𝘤𝘰𝘳𝘳𝘦𝘤𝘵𝘰! ⚠️</b>%0A• 𝘜𝘚𝘖 <code>/ccn cc|mm|yy|cvv</code>%0A• 𝘎𝘢𝘵𝘦𝘸𝘢𝘺 <code>St Charge 1 USD</code>', $message_id);
+            sendMessage($chatId, '<b>• 𝘍𝘰𝘳𝘮𝘢𝘵𝘰 𝘪𝘯𝘤𝘰𝘳𝘳𝘦𝘤𝘵𝘰! ⚠️</b>%0A• 𝘜𝘚𝘖 <code>/st cc|mm|yy|cvv</code>%0A• 𝘎𝘢𝘵𝘦𝘸𝘢𝘺 <code>St Charge 1 USD</code>', $message_id);
             exit();
   }
 $r = "0";
