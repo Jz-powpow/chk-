@@ -87,7 +87,7 @@ $start_time = microtime(true);
       bot('editMessageText',[
               'chat_id'=>$chat_id,
               'message_id'=>$messageidtoedit,
-              'text'=>"• 𝘍𝘰𝘳𝘮𝘢𝘵𝘰 𝘪𝘯𝘤𝘰𝘳𝘳𝘦𝘤𝘵𝘰! \n ⚠️•𝘜𝘚𝘖 <code>/au cc|mm|yy|cvv</code>• 𝘎𝘢𝘵𝘦𝘸𝘢𝘺 <code>Shopify Auth</code>",
+              'text'=>"• 𝘍𝘰𝘳𝘮𝘢𝘵𝘰 𝘪𝘯𝘤𝘰𝘳𝘳𝘦𝘤𝘵𝘰! \n ⚠️•𝘜𝘚𝘖 <code>/au cc|mm|yy|cvv</code>%0A• 𝘎𝘢𝘵𝘦𝘸𝘢𝘺 <code>Shopify Auth</code>",
               'parse_mode'=>'html',
               'disable_web_page_preview'=>'true'
               ]);
