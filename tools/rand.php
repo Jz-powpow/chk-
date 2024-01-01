@@ -4,7 +4,7 @@ if (preg_match('/^(\/fake|\.addr|!fake)/', $text)) {
     $add = substr($message, 6);
     
     if(empty($add)) {
-        $m = "<b>valid country code Ex:</b> <code>/addr us</code>";
+        $m = "<b>𝙐𝙨𝙖 𝙪𝙣 𝙘𝙤𝙙𝙚 𝙫𝙖𝙡𝙞𝙙𝙤, 𝙚𝙟𝙚𝙢𝙥𝙡𝙤:</b> <code>/addr us</code>";
         sendMessage($chatId,$m,$message_id);
         exit();
     }
