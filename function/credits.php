@@ -40,7 +40,7 @@ function checkAndUpdateUserStatus($userId, $username, $firstname, $chatId, $mess
     sendMessage($chatId, urlencode($messageToSend), $messageId);
 }
 
-// Then in the '/credits' command
-if (strpos($message, "/credits") === 0) {
+// Then in the '.my' command
+if (strpos($message, ".my") === 0) {
     checkAndUpdateUserStatus($userId, $username, $firstname, $chatId, $messageId);
 }
