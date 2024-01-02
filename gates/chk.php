@@ -391,7 +391,7 @@ curl_setopt($ch, CURLOPT_COOKIEJAR, getcwd().'/cookie.txt');
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_PROXY, $socks5);
 curl_setopt($ch, CURLOPT_PROXYUSERPWD, $rotate);
-curl_setopt($ch, CURLOPT_URL, 'https://friendsoflakeclaremont.org/?page_id=4562&level=1');
+curl_setopt($ch, CURLOPT_URL, 'https://recargas.personal.com.ar/api/lines/3751331638/recharges');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_HEADER, 0);
 curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
@@ -404,20 +404,19 @@ curl_setopt($ch, CURLOPT_COOKIEJAR, getcwd().'/cookie.txt');
 curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
             curl_setopt($ch, CURLOPT_POST, 1);
 $headers = array(
-  'authority: friendsoflakeclaremont.org',
+  'authority: recargas.personal.com.ar',
   'method: POST',
-  'path: /?page_id=4562&level=1',
+  'path: /api/lines/3751331638/recharges',
   'scheme: https',
-  'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
-  'accept-language: en-US,en;q=0.5',
-  'content-type: application/x-www-form-urlencoded',
+  'accept: application/json',
+  'accept-language: es,es-ES;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'content-type: application/json',
   'cookie: pmpro_visit=1; PHPSESSID=a9ff1fdf021e1418517e0ab1bba02a56; __stripe_mid=50c29e79-70fb-4db0-806e-601807510536383382; __stripe_sid=7f037b8b-f7d4-4dbe-8e7a-7c940bf17590aca2af; wordpress_logged_in_ed491f5bdb1beac3480bec0690cd8f88=bullet3%7C1699018091%7CwnNvTmOCOI2Ebou1zDmKw14GNcALBGc9RCtA2SWxEvL%7C7ad883e90f12dbb2987899118f93911cd5869e2f3c9c9bf0e674c4c23a0e7fdd; wfwaf-authcookie-24ac4681fd54ee5515bf6721694a0af3=45125%7Csubscriber%7Cread%7Cf2fedea412c5ae9a227f53d6a973a047136805e95e06714f29555ddd0263c3dc',
-  'origin: https://friendsoflakeclaremont.org',
-  'referer: https://friendsoflakeclaremont.org/?page_id=4562&level=1',
-  'sec-fetch-dest: document',
-  'sec-fetch-mode: navigate',
+  'origin: https://recargas.personal.com.ar',
+  'sec-fetch-dest: empty',
+  'sec-fetch-mode: cors',
   'sec-fetch-site: same-origin',
-  'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36',
+  'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0',
      );
 
 
