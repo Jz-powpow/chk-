@@ -400,20 +400,6 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
   $time = number_format($end_time - $start_time, 2);
     
 
-sleep(1);
-    edit_sent_message($chatId, $sent_message_id, "<b>
-
-━━━━━━━━━━━━━━━━━━
-[†] ᴄᴀʀᴅ ★ <code>$lista</code>
-[†] sᴛᴀᴛᴜs ★ ■■■■■ 99%🟢
-[†] ʀᴇsᴘᴏɴsᴇ ★ 81724: Duplicate card exists?
-━━━━━━━━━
-➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username/<code>[$rank]</code>
-『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz 
-━━━━━━━━━━━━━━━━━━</b>");
-$end_time = microtime(true);
-$time = number_format($end_time - $start_time, 2);
-
   //======checker part end=========//
 
   $resp = "<b>
