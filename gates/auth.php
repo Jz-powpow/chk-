@@ -416,18 +416,6 @@ $time = number_format($end_time - $start_time, 2);
 
   //======checker part end=========//
 
-
-if (
-    strpos($result3, 'Thank you for your membership.') !== false ||
-    strpos($result3, 'Membership confirmed.') !== false ||
-    strpos($result3, 'Membership Confirmation') !== false ||
-    strpos($result3, 'Thanks for your donation! Please check your email for a receipt.') !== false ||
-    strpos($result3, 'incorrect_zip') !== false ||
-    strpos($result3, 'Success ') !== false ||
-    strpos($result3, '"type":"one-time"') !== false ||
-    strpos($result3, '/donations/thank_you?donation_number=') !== false
-) {
-
   $resp = "<b>
     
     ////////--[Responses]--////////
