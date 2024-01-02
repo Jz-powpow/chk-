@@ -502,77 +502,7 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 'accept-language: en-IN,en-US;q=0.9,en;q=0.8',
 ));
 
-////////////////////////////===[2 Req Postfields]
 
-curl_setopt($ch, CURLOPT_POSTFIELDS,'------WebKitFormBoundarySKGPWq3q2cHft5yO
-Content-Disposition: form-data; name="input_1.3"
-
-Badboy
-------WebKitFormBoundarySKGPWq3q2cHft5yO
-Content-Disposition: form-data; name="input_1.6"
-
-Chk
-------WebKitFormBoundarySKGPWq3q2cHft5yO
-Content-Disposition: form-data; name="input_2"
-
-gsixchit@gmail.com
-------WebKitFormBoundarySKGPWq3q2cHft5yO
-Content-Disposition: form-data; name="input_3"
-
-(304) 648-6468
-------WebKitFormBoundarySKGPWq3q2cHft5yO
-Content-Disposition: form-data; name="input_7"
-
-$0.70
-------WebKitFormBoundarySKGPWq3q2cHft5yO
-Content-Disposition: form-data; name="input_6.5"
-
-Badbou
-------WebKitFormBoundarySKGPWq3q2cHft5yO
-Content-Disposition: form-data; name="is_submit_6"
-
-1
-------WebKitFormBoundarySKGPWq3q2cHft5yO
-Content-Disposition: form-data; name="gform_submit"
-
-6
-------WebKitFormBoundarySKGPWq3q2cHft5yO
-Content-Disposition: form-data; name="gform_unique_id"
-
-
-------WebKitFormBoundarySKGPWq3q2cHft5yO
-Content-Disposition: form-data; name="state_6"
-
-WyJ7XCI4XCI6W1wiNTFjNDZmOWU4ZDEyMDE1NWQ5MDQwOGRkNzQ4OWQyN2RcIl19IiwiZDA2YTY0MmM3MDI2YzhjNjNjNDM0NzVhZjcxZjE3YTciXQ==
-------WebKitFormBoundarySKGPWq3q2cHft5yO
-Content-Disposition: form-data; name="gform_target_page_number_6"
-
-0
-------WebKitFormBoundarySKGPWq3q2cHft5yO
-Content-Disposition: form-data; name="gform_source_page_number_6"
-
-1
-------WebKitFormBoundarySKGPWq3q2cHft5yO
-Content-Disposition: form-data; name="gform_field_values"
-
-
-------WebKitFormBoundarySKGPWq3q2cHft5yO
-Content-Disposition: form-data; name="pum_form_popup_id"
-
-8663
-------WebKitFormBoundarySKGPWq3q2cHft5yO
-Content-Disposition: form-data; name="stripe_response"
-
-{"id":"'.$pi.'","client_secret":"'.$scrt.'","amount":70}
-------WebKitFormBoundarySKGPWq3q2cHft5yO
-Content-Disposition: form-data; name="stripe_credit_card_last_four"
-
-'.$l4.'
-------WebKitFormBoundarySKGPWq3q2cHft5yO
-Content-Disposition: form-data; name="stripe_credit_card_type"
-
-'.$brnd.'
-------WebKitFormBoundarySKGPWq3q2cHft5yO--');
 
  $result3 = curl_exec($ch);
     $msg5 = trim(strip_tags(getStr($result3,'There was a problem with your submission:','.')));
