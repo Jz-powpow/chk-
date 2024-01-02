@@ -398,12 +398,7 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
     $end_time = microtime(true);
   $time = number_format($end_time - $start_time, 2);
-    
-
-  //======checker part end=========//
-
-  $resp = "<b>
-    
+   
     ////////--[Responses]--////////
 
       if(strpos($result2, '"status": "succeeded"' )) {
