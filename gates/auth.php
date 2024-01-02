@@ -398,6 +398,38 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
     $end_time = microtime(true);
   $time = number_format($end_time - $start_time, 2);
+    
+
+sleep(1);
+    edit_sent_message($chatId, $sent_message_id, "<b>
+
+━━━━━━━━━━━━━━━━━━
+[†] ᴄᴀʀᴅ ★ <code>$lista</code>
+[†] sᴛᴀᴛᴜs ★ ■■■■■ 99%🟢
+[†] ʀᴇsᴘᴏɴsᴇ ★ 81724: Duplicate card exists?
+━━━━━━━━━
+➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username/<code>[$rank]</code>
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz 
+━━━━━━━━━━━━━━━━━━</b>");
+$end_time = microtime(true);
+$time = number_format($end_time - $start_time, 2);
+
+  //======checker part end=========//
+
+
+if (
+    strpos($result3, 'Thank you for your membership.') !== false ||
+    strpos($result3, 'Membership confirmed.') !== false ||
+    strpos($result3, 'Membership Confirmation') !== false ||
+    strpos($result3, 'Thanks for your donation! Please check your email for a receipt.') !== false ||
+    strpos($result3, 'incorrect_zip') !== false ||
+    strpos($result3, 'Success ') !== false ||
+    strpos($result3, '"type":"one-time"') !== false ||
+    strpos($result3, '/donations/thank_you?donation_number=') !== false
+) {
+
+  $resp = "<b>
+    
     ////////--[Responses]--////////
 
       if(strpos($result2, '"status": "succeeded"' )) {
