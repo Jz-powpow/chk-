@@ -53,7 +53,6 @@ $currentDate = date('Y-m-d');
             }
         }
     }
-
 //=======RANK DETERMINE END=========//
 $update = json_decode(file_get_contents("php://input"), TRUE);
 $text = $update["message"]["text"];
@@ -63,94 +62,279 @@ $text = $update["message"]["text"];
 if (preg_match('/^(\/au|\.au|!au)/', $text)) {
     $userid = $update['message']['from']['id'];
 
-    
+    if (!checkAccess($userid)) {
+        $sent_message_id = send_reply($chatId, $message_id, $keyboard, "<b> @$username 𝘕𝘖 𝘌𝘙𝘌𝘚 𝘗𝘙𝘌𝘔𝘐𝘜𝘔❌</b>", $message_id);
+      exit();
+    }
 $start_time = microtime(true);
 
   $chatId = $update["message"]["chat"]["id"];
     $message_id = $update["message"]["message_id"];
     $keyboard = "";
-  $message = substr($message, 4);
-  $messageidtoedit1 = bot('sendmessage',[
-      'chat_id'=>$chat_id,
-      'text'=>"<b>Wait for Result...</b>",
-      'parse_mode'=>'html',
-      'reply_to_message_id'=> $message_id
-  ]);
-  $messageidtoedit = Getstr(json_encode($messageidtoedit1), '"message_id":', ',');
 
-  $cc = multiexplode(array(":", "/", " ", "|"), $message)[0];
-  $mes = multiexplode(array(":", "/", " ", "|"), $message)[1];
-  $ano = multiexplode(array(":", "/", " ", "|"), $message)[2];
-  $cvv = multiexplode(array(":", "/", " ", "|"), $message)[3];
-  $amt = '1';
-  if(empty($cc)||empty($cvv)||empty($mes)||empty($ano)){
-      bot('editMessageText',[
-              'chat_id'=>$chat_id,
-              'message_id'=>$messageidtoedit,
-              'text'=>"• 𝘍𝘰𝘳𝘮𝘢𝘵𝘰 𝘪𝘯𝘤𝘰𝘳𝘳𝘦𝘤𝘵𝘰! \n •𝘜𝘚𝘖 <code>/au cc|mm|yy|cvv</code>",
-              'parse_mode'=>'html',
-              'disable_web_page_preview'=>'true'
-              ]);
-      return;
-    };
-  if(strlen($ano) == '4'){
-      $an = substr($ano, 2);
+//=======WHO CAN CHECK END========//
+
+//====ANTISPAM AND WRONG FORMAT====//
+    if (strlen($message) <= 4) {
+            sendMessage($chatId, '<b>• 𝘍𝘰𝘳𝘮𝘢𝘵𝘰 𝘪𝘯𝘤𝘰𝘳𝘳𝘦𝘤𝘵𝘰! ⚠️</b>%0A• 𝘜𝘚𝘖 <code>/au cc|mm|yy|cvv</code>%0A• 𝘎𝘢𝘵𝘦𝘸𝘢𝘺 <code>Stripe Auth</code>', $message_id);
+            exit();
   }
-  else{
-    $an = $ano;
-  }
-      $amount = $amt * 100;
-  //------------Card info------------//
-  $lista = ''.$cc.'|'.$mes.'|'.$an.'|'.$cvv.'';
-  $ch = curl_init();
-  curl_setopt($ch, CURLOPT_URL, 'https://lookup.binlist.net/'.$cc.'');
-  curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
-  curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-  'Host: lookup.binlist.net',
-  'Cookie: _ga=GA1.2.549903363.1545240628; _gid=GA1.2.82939664.1545240628',
-  'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'));
-  curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-  curl_setopt($ch, CURLOPT_POSTFIELDS, 'bin='.$bin.'');
-  $fim = curl_exec($ch);
-  $bank = GetStr($fim, '"bank":{"name":"', '"');
-  $name = strtoupper(GetStr($fim, '"name":"', '"'));
-  $brand = strtoupper(GetStr($fim, '"brand":"', '"'));
-  $country = strtoupper(GetStr($fim, '"country":{"name":"', '"'));
-  $scheme = strtoupper(GetStr($fim, '"scheme":"', '"'));
-  $emoji = GetStr($fim, '"emoji":"', '"');
-    if(strpos($fim, '"type":"credit"') !== false){
-          $bin = 'insufficient_funds';
-          }else{
-          $bin = 'Fail Try again';
-          };        
-     //IF BIN ARE NOT AVAILABLE ----//
-      if (empty($scheme)) {
-          $scheme = "N/A";
-      }
-      if (empty($type)) {
-          $type = "N/A";
-      }
-      if (empty($brand)) {
-          $brand = "N/A";
-      }
-      if (empty($bank)) {
-          $bank = "N/A";
-      }
-      if (empty($name)) {
-          $name = "N/A";
-      }
-      if (empty($emoji)) {
-          $emoji = "N/A";
-      }
-      if (empty($currency)) {
-          $currency = "N/A";
-      }
-  curl_close($ch);
-  //------------Card info------------//
 $r = "0";
- 
+
 $r = rand(0, 100);
+//==ANTISPAM AND WRONG FORMAT END==//
+
+
+
+//==ANTISPAM AND WRONG FORMAT END==//
+
+
+//=======checker part start========//
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    extract($_POST);
+} elseif ($_SERVER['REQUEST_METHOD'] == "GET") {
+    extract($_GET);
+}
+function inStr($string, $start, $end, $value) {
+    $str = explode($start, $string);
+    $str = explode($end, $str[$value]);
+    return $str[0];
+}
+
+
+$lista = substr($message, 5);
+$separa = explode("|", $lista);
+$cc = isset($separa[0]) ? substr($separa[0], 0, 16) : ''; // Get only first 16 digits
+$mes = isset($separa[1]) ? $separa[1] : '';
+$ano = isset($separa[2]) ? $separa[2] : '';
+$cvv = isset($separa[3]) ? $separa[3] : '';
+
+
+$last4 = substr($cc, -4);
+
+
+$sent_message_id = send_reply($chatId, $message_id, $keyboard, "<b>
+
+━━━━━━━━━━━━━━━━━━
+[†] ᴄᴀʀᴅ ★ <code>$lista</code>
+[†] sᴛᴀᴛᴜs ★ ■□□□□ 20%🟣
+[†] ʀᴇsᴘᴏɴsᴇ ★  2001 Insufficient Funds?
+━━━━━━━━━━━━━━━━━━
+➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username/<code>[$rank]</code>
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz
+━━━━━━━━━━━━━━━━━━</b>");
+
+function value($str,$find_start,$find_end)
+{
+    $start = @strpos($str,$find_start);
+    if ($start === false) 
+    {
+        return "";
+    }
+    $length = strlen($find_start);
+    $end    = strpos(substr($str,$start +$length),$find_end);
+    return trim(substr($str,$start +$length,$end));
+}
+
+function mod($dividendo,$divisor)
+{
+    return round($dividendo - (floor($dividendo/$divisor)*$divisor));
+}
+//================[Functions and Variables]================//
+#------[Email Generator]------#
+
+
+
+function emailGenerate($length = 10)
+{
+    $characters       = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $charactersLength = strlen($characters);
+    $randomString     = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString . '@gmail.com';
+}
+$email = emailGenerate();
+#------[Username Generator]------#
+function usernameGen($length = 13)
+{
+    $characters       = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $charactersLength = strlen($characters);
+    $randomString     = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString;
+}
+$un = usernameGen();
+#------[Password Generator]------#
+function passwordGen($length = 15)
+{
+    $characters       = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $charactersLength = strlen($characters);
+    $randomString     = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString;
+}
+$pass = passwordGen();
+
+#------[CC Type Randomizer]------#
+
+ $cardNames = array(
+    "3" => "American Express",
+    "4" => "Visa",
+    "5" => "MasterCard",
+    "6" => "Discover"
+ );
+ $card_type = $cardNames[substr($cc, 0, 1)];
+
+
+
+
+sleep(1);
+    edit_sent_message($chatId, $sent_message_id, "<b>
+
+━━━━━━━━━━━━━━━━━━
+[†] ᴄᴀʀᴅ ★ <code>$lista</code>
+[†] sᴛᴀᴛᴜs ★ ■■□□□ 40%⚫
+[†] ʀᴇsᴘᴏɴsᴇ ★  2001 Insufficient Funds?
+━━━━━━━━━━━━━━━━━━
+➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username/<code>[$rank]</code>
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz 
+━━━━━━━━━━━━━━━━━━</b>");
+
+  //==================[Randomizing Details]======================//
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, 'https://randomuser.me/api/?nat=us');
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+curl_setopt($ch, CURLOPT_COOKIE, 1); 
+curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0');
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+$resposta = curl_exec($ch);
+$firstname = value($resposta, '"first":"', '"');
+$lastname = value($resposta, '"last":"', '"');
+$phone = value($resposta, '"phone":"', '"');
+$zip = value($resposta, '"postcode":', ',');
+$postcode = value($resposta, '"postcode":', ',');
+$state = value($resposta, '"state":"', '"');
+$city = value($resposta, '"city":"', '"');
+$street = value($resposta, '"street":"', '"');
+$numero1 = substr($phone, 1,3);
+$numero2 = substr($phone, 6,3);
+$numero3 = substr($phone, 10,4);
+$num = $numero1.''.$numero2.''.$numero3;
+$serve_arr = array("gmail.com","homtail.com","yahoo.com.br","bol.com.br","yopmail.com","outlook.com");
+$serv_rnd = $serve_arr[array_rand($serve_arr)];
+$email= str_replace("example.com", $serv_rnd, $email);
+if($state=="Alabama"){ $state="AL";
+}else if($state=="alaska"){ $state="AK";
+}else if($state=="arizona"){ $state="AR";
+}else if($state=="california"){ $state="CA";
+}else if($state=="olorado"){ $state="CO";
+}else if($state=="connecticut"){ $state="CT";
+}else if($state=="delaware"){ $state="DE";
+}else if($state=="district of columbia"){ $state="DC";
+}else if($state=="florida"){ $state="FL";
+}else if($state=="georgia"){ $state="GA";
+}else if($state=="hawaii"){ $state="HI";
+}else if($state=="idaho"){ $state="ID";
+}else if($state=="illinois"){ $state="IL";
+}else if($state=="indiana"){ $state="IN";
+}else if($state=="iowa"){ $state="IA";
+}else if($state=="kansas"){ $state="KS";
+}else if($state=="kentucky"){ $state="KY";
+}else if($state=="louisiana"){ $state="LA";
+}else if($state=="maine"){ $state="ME";
+}else if($state=="maryland"){ $state="MD";
+}else if($state=="massachusetts"){ $state="MA";
+}else if($state=="michigan"){ $state="MI";
+}else if($state=="minnesota"){ $state="MN";
+}else if($state=="mississippi"){ $state="MS";
+}else if($state=="missouri"){ $state="MO";
+}else if($state=="montana"){ $state="MT";
+}else if($state=="nebraska"){ $state="NE";
+}else if($state=="nevada"){ $state="NV";
+}else if($state=="new hampshire"){ $state="NH";
+}else if($state=="new jersey"){ $state="NJ";
+}else if($state=="new mexico"){ $state="NM";
+}else if($state=="new york"){ $state="LA";
+}else if($state=="north carolina"){ $state="NC";
+}else if($state=="north dakota"){ $state="ND";
+}else if($state=="Ohio"){ $state="OH";
+}else if($state=="oklahoma"){ $state="OK";
+}else if($state=="oregon"){ $state="OR";
+}else if($state=="pennsylvania"){ $state="PA";
+}else if($state=="rhode Island"){ $state="RI";
+}else if($state=="south carolina"){ $state="SC";
+}else if($state=="south dakota"){ $state="SD";
+}else if($state=="tennessee"){ $state="TN";
+}else if($state=="texas"){ $state="TX";
+}else if($state=="utah"){ $state="UT";
+}else if($state=="vermont"){ $state="VT";
+}else if($state=="virginia"){ $state="VA";
+}else if($state=="washington"){ $state="WA";
+}else if($state=="west virginia"){ $state="WV";
+}else if($state=="wisconsin"){ $state="WI";
+}else if($state=="wyoming"){ $state="WY";
+}else{$state="KY";} 
+
+//==============[Randomizing Details-END]======================//
+sleep(1);
+    edit_sent_message($chatId, $sent_message_id, "<b>
+
+━━━━━━━━━━━━━━━━━━
+[†] ᴄᴀʀᴅ ★ <code>$lista</code>
+[†] sᴛᴀᴛᴜs ★ ■■■□□ 60%🔴
+[†] ʀᴇsᴘᴏɴsᴇ ★ 81724: Duplicate card exists?
+━━━━━━━━━
+➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username/<code>[$rank]</code>
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz 
+━━━━━━━━━━━━━━━━━━</b>");
+
+
+  //==================[BIN LOOK-UP]======================//
+
+  $bin = substr($lista, 0,6);
+  $ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, 'https://lookup.binlist.net/'.$bin.'');
+curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
+curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+'Host: lookup.binlist.net',
+'Cookie: _ga=GA1.2.549903363.1545240628; _gid=GA1.2.82939664.1545240628',
+'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'));
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, 'bin='.$bin.'');
+$fim = curl_exec($ch);
+$bank = GetStr($fim, '"bank":{"name":"', '"');
+$name = strtoupper(GetStr($fim, '"name":"', '"'));
+$brand = strtoupper(GetStr($fim, '"brand":"', '"'));
+$country = strtoupper(GetStr($fim, '"country":{"name":"', '"'));
+$scheme = strtoupper(GetStr($fim, '"scheme":"', '"'));
+$emoji = GetStr($fim, '"emoji":"', '"');
+$type =strtoupper(GetStr($fim, '"type":"', '"'));
+
+
+//==================[BIN LOOK-UP-END]======================//
+
+
+
+sleep(1);
+    edit_sent_message($chatId, $sent_message_id, "<b>
+
+━━━━━━━━━━━━━━━━━━
+[†] ᴄᴀʀᴅ ★ <code>$lista</code>
+[†] sᴛᴀᴛᴜs ★ ■■■■□ 80%🔴
+[†] ʀᴇsᴘᴏɴsᴇ ★ 81724: Duplicate card exists?
+━━━━━━━━━
+➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username/<code>[$rank]</code>
+『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz 
+━━━━━━━━━━━━━━━━━━</b>");
   # -------------------- [1 REQ] -------------------#
   $ch = curl_init();
 
